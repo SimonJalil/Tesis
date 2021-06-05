@@ -1,0 +1,6 @@
+Project: Log_Bersa_Algo_Disparo
+Converter: ST System Workbench for STM32 project converter
+Date: 20200228
+
+Option fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.noexceptions is no longer supported
+Option fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.nortti is no longer supported

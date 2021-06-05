@@ -1,0 +1,10 @@
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : STEVAL-STLCR01V1-1-1-np.drl for board STEVAL-STLCR01V1.brd ... layers TOP and TOP
+;   Holesize 1. = 87.000000 Tolerance = +0.000000/-0.000000 NON_PLATED MILS Quantity = 2
+%
+G90
+X00000Y00295
+X00689Y00622
+M30
