@@ -14,111 +14,32 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STEVAL-STLCR01V1:STEVAL-STLCS01V1 U?
+L STEVAL-STLCR01V1:STEVAL-STLCS01V1 U1
 U 1 1 60BA8E27
-P 5550 2150
-F 0 "U?" H 5550 3117 50  0000 C CNN
-F 1 "STEVAL-STLCS01V1" H 5550 3026 50  0000 C CNN
-F 2 "XDCR_STEVAL-STLCS01V1" H 5550 2150 50  0001 L BNN
-F 3 "" H 5550 2150 50  0001 L BNN
-F 4 "STMicroelectronics" H 5550 2150 50  0001 L BNN "MANUFACTURER"
-	1    5550 2150
+P 5150 2150
+F 0 "U1" H 5150 3117 50  0000 C CNN
+F 1 "STEVAL-STLCS01V1" H 5150 3026 50  0000 C CNN
+F 2 "STEVAL-STLCS01V1_footprint:XDCR_STEVAL-STLCS01V1" H 5150 2150 50  0001 L BNN
+F 3 "" H 5150 2150 50  0001 L BNN
+F 4 "STMicroelectronics" H 5150 2150 50  0001 L BNN "MANUFACTURER"
+	1    5150 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 60BACB5E
-P 1950 1650
-F 0 "J?" H 2007 2117 50  0000 C CNN
-F 1 "USB_B_Micro" H 2007 2026 50  0000 C CNN
-F 2 "" H 2100 1600 50  0001 C CNN
-F 3 "~" H 2100 1600 50  0001 C CNN
-	1    1950 1650
-	1    0    0    -1  
-$EndComp
-Text Label 2700 1850 0    50   ~ 0
+Text Label 2300 1450 0    50   ~ 0
 V_USB
-Wire Wire Line
-	2700 1850 2250 1850
-Wire Wire Line
-	2250 1450 2700 1450
-Text Label 2700 1450 0    50   ~ 0
+Text Label 2300 2200 0    50   ~ 0
 GND
-Text Label 1150 1350 0    50   ~ 0
-V_USB
-$Comp
-L Device:C C?
-U 1 1 60BB14D4
-P 1150 1750
-F 0 "C?" H 1265 1796 50  0000 L CNN
-F 1 "C" H 1265 1705 50  0000 L CNN
-F 2 "" H 1188 1600 50  0001 C CNN
-F 3 "~" H 1150 1750 50  0001 C CNN
-	1    1150 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 1350 1150 1600
-Wire Wire Line
-	1150 1900 1150 2150
-Text Label 1150 2150 0    50   ~ 0
-GND
-Wire Wire Line
-	1850 2050 1900 2050
-Wire Wire Line
-	1900 2050 1900 2250
-Connection ~ 1900 2050
-Wire Wire Line
-	1900 2050 1950 2050
-Text Label 1900 2250 0    50   ~ 0
-GND
-Text Label 3200 1850 0    50   ~ 0
-GND
-Text Label 3600 1850 0    50   ~ 0
-V_USB
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 60BB400F
-P 3200 1450
-F 0 "#FLG?" H 3200 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 3200 1623 50  0000 C CNN
-F 2 "" H 3200 1450 50  0001 C CNN
-F 3 "~" H 3200 1450 50  0001 C CNN
-	1    3200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 60BB434E
-P 3600 1450
-F 0 "#FLG?" H 3600 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 3600 1623 50  0000 C CNN
-F 2 "" H 3600 1450 50  0001 C CNN
-F 3 "~" H 3600 1450 50  0001 C CNN
-	1    3600 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 1450 3200 1850
-Wire Wire Line
-	3600 1450 3600 1850
 Wire Notes Line
 	1000 1100 1000 2350
-Wire Notes Line
-	1000 2350 3900 2350
-Wire Notes Line
-	3900 2350 3900 1100
-Wire Notes Line
-	3900 1100 1000 1100
 Text Notes 1000 1050 0    50   ~ 0
 N1-Entrada_de_voltaje
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J1
 U 1 1 60BBD811
 P 1350 3100
-F 0 "J?" H 1458 3481 50  0000 C CNN
+F 0 "J1" H 1458 3481 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 1458 3390 50  0000 C CNN
-F 2 "" H 1350 3100 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 1350 3100 50  0001 C CNN
 F 3 "~" H 1350 3100 50  0001 C CNN
 	1    1350 3100
 	1    0    0    -1  
@@ -152,57 +73,256 @@ Wire Notes Line
 	2200 2650 1000 2650
 Text Notes 1000 2600 0    50   ~ 0
 N2-Interfaz_SWD
-Text Label 4650 1850 2    50   ~ 0
-MIC_CLK
-Text Label 4650 1650 2    50   ~ 0
-3.3V
-Text Label 6450 1450 0    50   ~ 0
-3.3V
-NoConn ~ 6450 1650
-Text Label 2600 1650 0    50   ~ 0
+Text Label 4250 1650 2    50   ~ 0
+VIN
+NoConn ~ 6050 1650
+Text Label 2300 1650 0    50   ~ 0
 RXD-USB_DM
-Text Label 2600 1750 0    50   ~ 0
+Text Label 2300 1750 0    50   ~ 0
 RXD-USB_DP
 Wire Wire Line
-	2250 1650 2600 1650
+	1950 1650 2300 1650
 Wire Wire Line
-	2250 1750 2600 1750
-Text Notes 6950 5200 0    50   ~ 0
-Dudas:\nD1: La disposicion de los pines del simbolo Micro USB,\n no son identicas al estipulado en el pdf del fabricante, \npor ende se opto por usar estas ultimas disposiciones. \nComprobar si son correctas. 
-Text Label 6450 1850 0    50   ~ 0
+	1950 1750 2300 1750
+Text Label 6050 1850 0    50   ~ 0
 RXD-USB_DP
-Text Label 6450 1950 0    50   ~ 0
+Text Label 6050 1950 0    50   ~ 0
 RXD-USB_DM
-Text Label 6450 2850 0    50   ~ 0
+Text Label 6050 2850 0    50   ~ 0
 GND
-Text Label 4650 2250 2    50   ~ 0
-SD_SCK
-Text Label 4650 2450 2    50   ~ 0
-SD_MISO
-Text Label 4650 2550 2    50   ~ 0
-SD_CS
-Text Label 4650 2350 2    50   ~ 0
-SD_MOSI
-Text Label 4650 2050 2    50   ~ 0
+Text Label 4250 2050 2    50   ~ 0
 RESET
-Text Label 6450 2150 0    50   ~ 0
+Text Label 6050 2150 0    50   ~ 0
 I2C_SDA
-Text Label 6450 2250 0    50   ~ 0
+Text Label 6050 2250 0    50   ~ 0
 I2C_SCL
-Text Label 6450 2450 0    50   ~ 0
+Text Label 6050 2450 0    50   ~ 0
 SWDCLK
-Text Label 6450 2550 0    50   ~ 0
+Text Label 6050 2550 0    50   ~ 0
 SWDIO
-Text Label 6450 2750 0    50   ~ 0
+Text Label 6050 2750 0    50   ~ 0
 GND
 Wire Notes Line
-	4150 1100 4150 3050
+	3750 1100 3750 3050
 Wire Notes Line
-	4150 3050 7050 3050
+	3750 3050 6650 3050
 Wire Notes Line
-	7050 3050 7050 1100
+	6650 3050 6650 1100
 Wire Notes Line
-	7050 1100 4150 1100
-Text Notes 4150 1050 0    50   ~ 0
-N3-STEVAL-STLCR01V1
+	6650 1100 3750 1100
+Text Notes 3750 1050 0    50   ~ 0
+N6-STEVAL-STLCR01V1
+$Comp
+L Device:D_Zener D1
+U 1 1 60BFFB26
+P 2450 4400
+F 0 "D1" V 2404 4480 50  0000 L CNN
+F 1 "D_Zener" V 2495 4480 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 2450 4400 50  0001 C CNN
+F 3 "~" H 2450 4400 50  0001 C CNN
+	1    2450 4400
+	0    1    1    0   
+$EndComp
+Text Label 1250 4050 2    50   ~ 0
+V_USB
+Text Label 1200 4550 2    50   ~ 0
+GND
+Text Label 2600 4050 0    50   ~ 0
+VIN
+$Comp
+L Device:R R1
+U 1 1 60C00A3D
+P 1400 4050
+F 0 "R1" V 1193 4050 50  0000 C CNN
+F 1 "1Ω" V 1284 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1330 4050 50  0001 C CNN
+F 3 "~" H 1400 4050 50  0001 C CNN
+	1    1400 4050
+	0    1    1    0   
+$EndComp
+Text Notes 1000 3700 0    50   ~ 0
+N4-Regulación
+NoConn ~ 4250 2250
+NoConn ~ 4250 2350
+NoConn ~ 4250 2450
+NoConn ~ 4250 2550
+NoConn ~ 6050 1450
+Text Label 3100 3000 0    50   ~ 0
+I2C_SDA
+Text Label 3100 3100 0    50   ~ 0
+I2C_SCL
+Wire Notes Line
+	3450 2650 2350 2650
+Text Notes 2350 2600 0    50   ~ 0
+N3-I2C
+$Comp
+L Device:R R2
+U 1 1 60C21078
+P 1800 4050
+F 0 "R2" V 2007 4050 50  0000 C CNN
+F 1 "1Ω" V 1916 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1730 4050 50  0001 C CNN
+F 3 "~" H 1800 4050 50  0001 C CNN
+	1    1800 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60C2144B
+P 2200 4050
+F 0 "R3" V 2407 4050 50  0000 C CNN
+F 1 "1Ω" V 2316 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2130 4050 50  0001 C CNN
+F 3 "~" H 2200 4050 50  0001 C CNN
+	1    2200 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 4050 1650 4050
+Wire Wire Line
+	1950 4050 2050 4050
+Wire Wire Line
+	1200 4550 2450 4550
+Wire Wire Line
+	2450 4250 2450 4050
+Wire Wire Line
+	2450 4050 2350 4050
+Wire Wire Line
+	2450 4050 2600 4050
+Connection ~ 2450 4050
+Wire Notes Line
+	1000 3750 1000 4600
+Wire Notes Line
+	1000 4600 2850 4600
+Wire Notes Line
+	2850 4600 2850 3750
+Wire Notes Line
+	1000 3750 2850 3750
+Text Label 3100 2900 0    50   ~ 0
+V_USB
+Text Label 3100 3200 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 60C28856
+P 2600 3000
+F 0 "J3" H 2708 3281 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2708 3190 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 2600 3000 50  0001 C CNN
+F 3 "~" H 2600 3000 50  0001 C CNN
+	1    2600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2900 3100 2900
+Wire Wire Line
+	2800 3000 3100 3000
+Wire Wire Line
+	2800 3100 3100 3100
+Wire Wire Line
+	2800 3200 3100 3200
+Wire Notes Line
+	2350 3250 3450 3250
+Wire Notes Line
+	2350 2650 2350 3250
+Wire Notes Line
+	3450 2650 3450 3250
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 60BACB5E
+P 1650 1650
+F 0 "J2" H 1707 2117 50  0000 C CNN
+F 1 "USB_B_Micro" H 1707 2026 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1800 1600 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2050 1650 2200
+NoConn ~ 1550 2050
+NoConn ~ 4250 1850
+NoConn ~ 1950 1850
+Wire Notes Line
+	1000 2350 3150 2350
+Wire Notes Line
+	3150 2350 3150 1100
+Wire Notes Line
+	3150 1100 1000 1100
+Wire Wire Line
+	1950 1450 2300 1450
+Wire Wire Line
+	1650 2200 2300 2200
+Text Notes 3000 4300 0    59   ~ 0
+Rpz=(Vs-Vz)/((Iz*1.1)+Il)\nRpz=(5v-4.7v)/(53mA*1.1+100mA)\nRpz=2,84Ω
+$Comp
+L Device:LED D2
+U 1 1 60C6CD3B
+P 2050 5150
+F 0 "D2" H 2043 4895 50  0000 C CNN
+F 1 "LED" H 2043 4986 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 2050 5150 50  0001 C CNN
+F 3 "~" H 2050 5150 50  0001 C CNN
+	1    2050 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60C6DA9C
+P 2050 5500
+F 0 "D3" H 2043 5245 50  0000 C CNN
+F 1 "LED" H 2043 5336 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 2050 5500 50  0001 C CNN
+F 3 "~" H 2050 5500 50  0001 C CNN
+	1    2050 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60C6E1B1
+P 1500 5150
+F 0 "R4" V 1293 5150 50  0000 C CNN
+F 1 "1kΩ" V 1384 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60C6E5D7
+P 1500 5500
+F 0 "R5" V 1293 5500 50  0000 C CNN
+F 1 "1kΩ" V 1384 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 5500 50  0001 C CNN
+F 3 "~" H 1500 5500 50  0001 C CNN
+	1    1500 5500
+	0    1    1    0   
+$EndComp
+Text Label 2450 5150 0    50   ~ 0
+GND
+Text Label 2450 5500 0    50   ~ 0
+GND
+Wire Wire Line
+	2200 5500 2450 5500
+Wire Wire Line
+	2200 5150 2450 5150
+Wire Wire Line
+	1650 5150 1900 5150
+Wire Wire Line
+	1650 5500 1900 5500
+Text Label 1350 5150 2    50   ~ 0
+V_USB
+Text Label 1350 5500 2    50   ~ 0
+SWDCLK
+Wire Notes Line
+	1000 4850 1000 5600
+Wire Notes Line
+	1000 5600 2650 5600
+Wire Notes Line
+	2650 5600 2650 4850
+Wire Notes Line
+	2650 4850 1000 4850
+Text Notes 1050 4800 0    50   ~ 0
+N5-LEDs
 $EndSCHEMATC
