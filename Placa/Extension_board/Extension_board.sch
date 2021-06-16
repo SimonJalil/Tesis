@@ -37,9 +37,9 @@ Text Label 1800 3300 0    50   ~ 0
 SWDCLK
 Text Label 1800 3400 0    50   ~ 0
 GND
-Text Label 1800 3100 0    50   ~ 0
-SWDIO
 Text Label 1800 3200 0    50   ~ 0
+SWDIO
+Text Label 1800 3100 0    50   ~ 0
 RESET
 Wire Notes Line
 	2200 2650 1000 2650
@@ -90,7 +90,7 @@ U 1 1 60BFFB26
 P 2400 4650
 F 0 "D1" V 2354 4730 50  0000 L CNN
 F 1 "D_Zener" V 2445 4730 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2400 4650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 2400 4650 50  0001 C CNN
 F 3 "~" H 2400 4650 50  0001 C CNN
 	1    2400 4650
 	0    1    1    0   
@@ -107,7 +107,7 @@ U 1 1 60C00A3D
 P 1850 4300
 F 0 "R1" V 1643 4300 50  0000 C CNN
 F 1 "1,2Ω" V 1734 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 4300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 1780 4300 50  0001 C CNN
 F 3 "~" H 1850 4300 50  0001 C CNN
 	1    1850 4300
 	0    1    1    0   
@@ -141,7 +141,7 @@ Wire Notes Line
 	2800 4850 2800 4000
 Wire Notes Line
 	950  4000 2800 4000
-Text Label 3100 3200 0    50   ~ 0
+Text Label 3100 2900 0    50   ~ 0
 GND
 $Comp
 L Connector:Conn_01x04_Male J3
@@ -149,7 +149,7 @@ U 1 1 60C28856
 P 2600 3000
 F 0 "J3" H 2708 3281 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 2708 3190 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical_SMD_Pin1Left" H 2600 3000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 2600 3000 50  0001 C CNN
 F 3 "~" H 2600 3000 50  0001 C CNN
 	1    2600 3000
 	1    0    0    -1  
@@ -202,7 +202,7 @@ U 1 1 60C6CD3B
 P 2000 5400
 F 0 "D2" H 1993 5145 50  0000 C CNN
 F 1 "LED" H 1993 5236 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2000 5400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 2000 5400 50  0001 C CNN
 F 3 "~" H 2000 5400 50  0001 C CNN
 	1    2000 5400
 	-1   0    0    1   
@@ -213,7 +213,7 @@ U 1 1 60C6E1B1
 P 1450 5400
 F 0 "R4" V 1243 5400 50  0000 C CNN
 F 1 "1kΩ" V 1334 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1380 5400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 1380 5400 50  0001 C CNN
 F 3 "~" H 1450 5400 50  0001 C CNN
 	1    1450 5400
 	0    1    1    0   
@@ -272,6 +272,6 @@ Wire Wire Line
 Connection ~ 2400 4300
 Wire Wire Line
 	1200 4300 1700 4300
-Text Label 3100 2900 0    50   ~ 0
+Text Label 3100 3200 0    50   ~ 0
 VIN
 $EndSCHEMATC
