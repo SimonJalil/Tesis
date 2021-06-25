@@ -37,9 +37,9 @@ Text Label 1800 3300 0    50   ~ 0
 SWDCLK
 Text Label 1800 3400 0    50   ~ 0
 GND
-Text Label 1800 3100 0    50   ~ 0
-SWDIO
 Text Label 1800 3200 0    50   ~ 0
+SWDIO
+Text Label 1800 3100 0    50   ~ 0
 RESET
 Wire Notes Line
 	2200 2650 1000 2650
