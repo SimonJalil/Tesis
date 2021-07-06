@@ -115,16 +115,11 @@ $EndComp
 Text Notes 950  3950 0    50   ~ 0
 N4-Regulación
 NoConn ~ 4250 2250
-NoConn ~ 4250 2350
-NoConn ~ 4250 2450
-NoConn ~ 4250 2550
 NoConn ~ 6050 1450
 Text Label 3100 3100 0    50   ~ 0
 I2C_SDA
 Text Label 3100 3000 0    50   ~ 0
 I2C_SCL
-Wire Notes Line
-	3450 2650 2350 2650
 Text Notes 2350 2600 0    50   ~ 0
 N3-I2C
 Wire Wire Line
@@ -143,17 +138,6 @@ Wire Notes Line
 	950  4000 2800 4000
 Text Label 3100 2900 0    50   ~ 0
 GND
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 60C28856
-P 2600 3000
-F 0 "J3" H 2708 3281 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2708 3190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 2600 3000 50  0001 C CNN
-F 3 "~" H 2600 3000 50  0001 C CNN
-	1    2600 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 2900 3100 2900
 Wire Wire Line
@@ -162,12 +146,6 @@ Wire Wire Line
 	2800 3100 3100 3100
 Wire Wire Line
 	2800 3200 3100 3200
-Wire Notes Line
-	2350 3250 3450 3250
-Wire Notes Line
-	2350 2650 2350 3250
-Wire Notes Line
-	3450 2650 3450 3250
 $Comp
 L Connector:USB_B_Micro J2
 U 1 1 60BACB5E
@@ -272,6 +250,38 @@ Wire Wire Line
 Connection ~ 2400 4300
 Wire Wire Line
 	1200 4300 1700 4300
-Text Label 3100 3200 0    50   ~ 0
+Text Label 3100 3400 0    50   ~ 0
 VIN
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 60E39457
+P 2600 3100
+F 0 "J3" H 2708 3481 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 2708 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 2600 3100 50  0001 C CNN
+F 3 "~" H 2600 3100 50  0001 C CNN
+	1    2600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3300 3100 3300
+Wire Wire Line
+	2800 3400 3100 3400
+Wire Notes Line
+	2350 2650 2350 3500
+Text Label 3100 3300 0    50   ~ 0
+SAI_MCLK
+Text Label 4250 2350 2    50   ~ 0
+SAI_MCLK
+NoConn ~ 4250 2450
+Text Label 4250 2550 2    50   ~ 0
+SAI_SD
+Text Label 3100 3200 0    50   ~ 0
+SAI_SD
+Wire Notes Line
+	3500 3500 3500 2650
+Wire Notes Line
+	2350 2650 3500 2650
+Wire Notes Line
+	2350 3500 3500 3500
 $EndSCHEMATC
