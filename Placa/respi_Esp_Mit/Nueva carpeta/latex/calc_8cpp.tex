@@ -1,0 +1,85 @@
+\hypertarget{calc_8cpp}{}\doxysection{Referencia del Archivo calc.\+cpp}
+\label{calc_8cpp}\index{calc.cpp@{calc.cpp}}
+{\ttfamily \#include \char`\"{}calc.\+h\char`\"{}}\newline
+Dependencia gráfica adjunta para calc.\+cpp\+:
+% FIG 0
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{calc_8cpp_a85a69dd703a28a51142294036a464907}\label{calc_8cpp_a85a69dd703a28a51142294036a464907}} 
+\#define {\bfseries E\+L\+E\+M\+\_\+\+S\+W\+AP}(a,  b)~\{ unsigned int t=(a);(a)=(b);(b)=t; \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calc_8cpp_a731804a9de0d750ca4f3ebe75d268373}{estimate\+Tidal\+Volume}} (int estatura, int sexo)
+\begin{DoxyCompactList}\small\item\em estima el volumen tidal en función de estatura y sexo, en ml. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{calc_8cpp_ab669cf6818ac3cfabbb47c9d0a2dc2e9}{Quick\+Select\+Median}} (unsigned int arr\mbox{[}$\,$\mbox{]}, uint8\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em filtro de media movil. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calc_8cpp_af641246d44249a8d06ab9783e219231b}{refresh\+Watch\+Dog\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Refresca el W\+DT (Watch Dog Timer) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Funciones de cálculo necesarias
+
+Este archivo contiene las definiciones de las funciones de cálculo necesarias 
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{calc_8cpp_a731804a9de0d750ca4f3ebe75d268373}\label{calc_8cpp_a731804a9de0d750ca4f3ebe75d268373}} 
+\index{calc.cpp@{calc.cpp}!estimateTidalVolume@{estimateTidalVolume}}
+\index{estimateTidalVolume@{estimateTidalVolume}!calc.cpp@{calc.cpp}}
+\doxysubsubsection{\texorpdfstring{estimateTidalVolume()}{estimateTidalVolume()}}
+{\footnotesize\ttfamily int estimate\+Tidal\+Volume (\begin{DoxyParamCaption}\item[{int}]{estatura,  }\item[{int}]{sexo }\end{DoxyParamCaption})}
+
+
+
+estima el volumen tidal en función de estatura y sexo, en ml. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em estatura} & en cm, del paciente \\
+\hline
+{\em sexo} & 0\+: varón, 1\+: mujer, sexo del paciente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+$\ast$volumen\+Tidal volumen tidal estimado, en mililitros 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calc_8cpp_ab669cf6818ac3cfabbb47c9d0a2dc2e9}\label{calc_8cpp_ab669cf6818ac3cfabbb47c9d0a2dc2e9}} 
+\index{calc.cpp@{calc.cpp}!QuickSelectMedian@{QuickSelectMedian}}
+\index{QuickSelectMedian@{QuickSelectMedian}!calc.cpp@{calc.cpp}}
+\doxysubsubsection{\texorpdfstring{QuickSelectMedian()}{QuickSelectMedian()}}
+{\footnotesize\ttfamily int Quick\+Select\+Median (\begin{DoxyParamCaption}\item[{unsigned int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+filtro de media movil. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em estatura} & en cm, del paciente \\
+\hline
+{\em sexo} & 0\+: varón, 1\+: mujer, sexo del paciente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+señal filtrada. 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+% FIG 1
+\mbox{\Hypertarget{calc_8cpp_af641246d44249a8d06ab9783e219231b}\label{calc_8cpp_af641246d44249a8d06ab9783e219231b}} 
+\index{calc.cpp@{calc.cpp}!refreshWatchDogTimer@{refreshWatchDogTimer}}
+\index{refreshWatchDogTimer@{refreshWatchDogTimer}!calc.cpp@{calc.cpp}}
+\doxysubsubsection{\texorpdfstring{refreshWatchDogTimer()}{refreshWatchDogTimer()}}
+{\footnotesize\ttfamily void refresh\+Watch\+Dog\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refresca el W\+DT (Watch Dog Timer) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \textbackslash{}returm ninguno \\
+\hline
+\end{DoxyParams}

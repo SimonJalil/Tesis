@@ -1,0 +1,128 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Ciclos\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}OM Struct Reference}{5}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}FS Struct Reference}{5}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{5}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.3}Configuration\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}t Struct Reference}{6}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{6}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.4}Mech Class Reference}{6}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{6}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.5}Mech\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ventilation Class Reference}{7}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{8}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{8}{subsection.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.2.1}MechVentilation()}{8}{subsubsection.3.5.2.1}% 
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{8}{subsection.3.5.3}% 
+\contentsline {subsubsection}{\numberline {3.5.3.1}activateRecruitment()}{8}{subsubsection.3.5.3.1}% 
+\contentsline {subsubsection}{\numberline {3.5.3.2}evaluatePressure()}{8}{subsubsection.3.5.3.2}% 
+\contentsline {subsubsection}{\numberline {3.5.3.3}getAlarms()}{9}{subsubsection.3.5.3.3}% 
+\contentsline {subsubsection}{\numberline {3.5.3.4}getInsuflationTimeApp()}{9}{subsubsection.3.5.3.4}% 
+\contentsline {subsubsection}{\numberline {3.5.3.5}setAlarms()}{9}{subsubsection.3.5.3.5}% 
+\contentsline {subsubsection}{\numberline {3.5.3.6}setInsuflationTime()}{9}{subsubsection.3.5.3.6}% 
+\contentsline {subsubsection}{\numberline {3.5.3.7}start()}{10}{subsubsection.3.5.3.7}% 
+\contentsline {subsubsection}{\numberline {3.5.3.8}stopMech()}{10}{subsubsection.3.5.3.8}% 
+\contentsline {subsubsection}{\numberline {3.5.3.9}update()}{10}{subsubsection.3.5.3.9}% 
+\contentsline {section}{\numberline {3.6}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}OR Class Reference}{10}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{11}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{11}{subsection.3.6.2}% 
+\contentsline {subsubsection}{\numberline {3.6.2.1}MPX\_PRESSURE\_SENSOR()}{11}{subsubsection.3.6.2.1}% 
+\contentsline {subsubsection}{\numberline {3.6.2.2}$\sim $MPX\_PRESSURE\_SENSOR()}{12}{subsubsection.3.6.2.2}% 
+\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{12}{subsection.3.6.3}% 
+\contentsline {subsubsection}{\numberline {3.6.3.1}autoajuste()}{12}{subsubsection.3.6.3.1}% 
+\contentsline {subsubsection}{\numberline {3.6.3.2}getOffsetValue()}{13}{subsubsection.3.6.3.2}% 
+\contentsline {subsubsection}{\numberline {3.6.3.3}MPX\_CONVERT\_cmH20()}{13}{subsubsection.3.6.3.3}% 
+\contentsline {subsubsection}{\numberline {3.6.3.4}MPX\_CONVERT\_PRESSURE()}{13}{subsubsection.3.6.3.4}% 
+\contentsline {subsubsection}{\numberline {3.6.3.5}MPX\_READ\_PRESSURE()}{14}{subsubsection.3.6.3.5}% 
+\contentsline {subsubsection}{\numberline {3.6.3.6}MPX\_SET\_ADC()}{14}{subsubsection.3.6.3.6}% 
+\contentsline {subsubsection}{\numberline {3.6.3.7}setOffsetValue()}{15}{subsubsection.3.6.3.7}% 
+\contentsline {section}{\numberline {3.7}Sensores Class Reference}{15}{section.3.7}% 
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{15}{subsection.3.7.1}% 
+\contentsline {section}{\numberline {3.8}Sensor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Last\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pressure\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}t Struct Reference}{15}{section.3.8}% 
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{16}{subsection.3.8.1}% 
+\contentsline {section}{\numberline {3.9}Sensor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pressure\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Values\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}t Struct Reference}{16}{section.3.9}% 
+\contentsline {section}{\numberline {3.10}Sensors Class Reference}{16}{section.3.10}% 
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{17}{subsection.3.10.1}% 
+\contentsline {subsection}{\numberline {3.10.2}Constructor \& Destructor Documentation}{17}{subsection.3.10.2}% 
+\contentsline {subsubsection}{\numberline {3.10.2.1}Sensors()}{17}{subsubsection.3.10.2.1}% 
+\contentsline {subsection}{\numberline {3.10.3}Member Function Documentation}{18}{subsection.3.10.3}% 
+\contentsline {subsubsection}{\numberline {3.10.3.1}begin()}{18}{subsubsection.3.10.3.1}% 
+\contentsline {subsubsection}{\numberline {3.10.3.2}getAbsolutePressureInCmH2O()}{18}{subsubsection.3.10.3.2}% 
+\contentsline {subsubsection}{\numberline {3.10.3.3}getAbsolutePressureInPascals()}{18}{subsubsection.3.10.3.3}% 
+\contentsline {subsubsection}{\numberline {3.10.3.4}getFlow()}{19}{subsubsection.3.10.3.4}% 
+\contentsline {subsubsection}{\numberline {3.10.3.5}getLastPressure()}{19}{subsubsection.3.10.3.5}% 
+\contentsline {subsubsection}{\numberline {3.10.3.6}getRelativePressureInCmH2O()}{19}{subsubsection.3.10.3.6}% 
+\contentsline {subsubsection}{\numberline {3.10.3.7}getVolume()}{21}{subsubsection.3.10.3.7}% 
+\contentsline {subsubsection}{\numberline {3.10.3.8}getVolumeActual()}{21}{subsubsection.3.10.3.8}% 
+\contentsline {subsubsection}{\numberline {3.10.3.9}readPressure()}{22}{subsubsection.3.10.3.9}% 
+\contentsline {subsubsection}{\numberline {3.10.3.10}readVolume()}{22}{subsubsection.3.10.3.10}% 
+\contentsline {subsubsection}{\numberline {3.10.3.11}rebootVolumeSensor()}{22}{subsubsection.3.10.3.11}% 
+\contentsline {subsubsection}{\numberline {3.10.3.12}resetPressures()}{23}{subsubsection.3.10.3.12}% 
+\contentsline {subsubsection}{\numberline {3.10.3.13}rutinaDeAutoajuste()}{23}{subsubsection.3.10.3.13}% 
+\contentsline {subsubsection}{\numberline {3.10.3.14}saveVolume()}{23}{subsubsection.3.10.3.14}% 
+\contentsline {subsubsection}{\numberline {3.10.3.15}stalledVolumeSensor()}{24}{subsubsection.3.10.3.15}% 
+\contentsline {section}{\numberline {3.11}Sensor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Volume\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Value\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}t Struct Reference}{24}{section.3.11}% 
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{24}{subsection.3.11.1}% 
+\contentsline {section}{\numberline {3.12}Ventilation\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Options\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}t Struct Reference}{25}{section.3.12}% 
+\contentsline {chapter}{\numberline {4}File Documentation}{27}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}calc.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{27}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{27}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{27}{subsection.4.1.2}% 
+\contentsline {subsubsection}{\numberline {4.1.2.1}estimateTidalVolume()}{27}{subsubsection.4.1.2.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2.2}QuickSelectMedian()}{28}{subsubsection.4.1.2.2}% 
+\contentsline {subsubsection}{\numberline {4.1.2.3}refreshWatchDogTimer()}{28}{subsubsection.4.1.2.3}% 
+\contentsline {section}{\numberline {4.2}calc.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{28}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{29}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{29}{subsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}estimateTidalVolume()}{29}{subsubsection.4.2.2.1}% 
+\contentsline {subsubsection}{\numberline {4.2.2.2}QuickSelectMedian()}{29}{subsubsection.4.2.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.2.3}refreshWatchDogTimer()}{30}{subsubsection.4.2.2.3}% 
+\contentsline {section}{\numberline {4.3}defaults.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{30}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{33}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Macro Definition Documentation}{33}{subsection.4.3.2}% 
+\contentsline {subsubsection}{\numberline {4.3.2.1}Alarm\_breathe\_DIS}{33}{subsubsection.4.3.2.1}% 
+\contentsline {subsubsection}{\numberline {4.3.2.2}Alarm\_desconected\_DIS}{34}{subsubsection.4.3.2.2}% 
+\contentsline {subsubsection}{\numberline {4.3.2.3}Alarm\_No\_Flux\_DIS}{34}{subsubsection.4.3.2.3}% 
+\contentsline {subsubsection}{\numberline {4.3.2.4}Alarm\_No\_Flux\_EN}{34}{subsubsection.4.3.2.4}% 
+\contentsline {subsubsection}{\numberline {4.3.2.5}Alarm\_Overpressure\_DIS}{34}{subsubsection.4.3.2.5}% 
+\contentsline {subsubsection}{\numberline {4.3.2.6}DEFAULT\_BYARRAY\_VOLTILDAL}{34}{subsubsection.4.3.2.6}% 
+\contentsline {subsubsection}{\numberline {4.3.2.7}DEFAULT\_PA\_TO\_CM\_H2O}{34}{subsubsection.4.3.2.7}% 
+\contentsline {subsubsection}{\numberline {4.3.2.8}DEFAULT\_TINS}{35}{subsubsection.4.3.2.8}% 
+\contentsline {subsubsection}{\numberline {4.3.2.9}No\_Alarm}{35}{subsubsection.4.3.2.9}% 
+\contentsline {subsubsection}{\numberline {4.3.2.10}PIN\_MPX\_DATA}{35}{subsubsection.4.3.2.10}% 
+\contentsline {subsubsection}{\numberline {4.3.2.11}PIN\_MPX\_FLOW}{35}{subsubsection.4.3.2.11}% 
+\contentsline {subsubsection}{\numberline {4.3.2.12}SOLENOID\_CLOSED}{35}{subsubsection.4.3.2.12}% 
+\contentsline {subsubsection}{\numberline {4.3.2.13}STEPPER\_HIGHEST\_POSITION}{35}{subsubsection.4.3.2.13}% 
+\contentsline {subsubsection}{\numberline {4.3.2.14}STEPPER\_LOWEST\_POSITION}{36}{subsubsection.4.3.2.14}% 
+\contentsline {subsubsection}{\numberline {4.3.2.15}STEPPER\_MICROSTEPS}{36}{subsubsection.4.3.2.15}% 
+\contentsline {subsubsection}{\numberline {4.3.2.16}STEPPER\_PEEP\_SOLENOID\_HYSTERESIS}{36}{subsubsection.4.3.2.16}% 
+\contentsline {section}{\numberline {4.4}Mech\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ventilation.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{36}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{36}{subsection.4.4.1}% 
+\contentsline {section}{\numberline {4.5}Mech\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ventilation.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{37}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{37}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Enumeration Type Documentation}{37}{subsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.2.1}State}{38}{subsubsection.4.5.2.1}% 
+\contentsline {subsection}{\numberline {4.5.3}Variable Documentation}{38}{subsection.4.5.3}% 
+\contentsline {subsubsection}{\numberline {4.5.3.1}HOLD\_IN\_DURATION}{38}{subsubsection.4.5.3.1}% 
+\contentsline {subsubsection}{\numberline {4.5.3.2}VoluTidal}{38}{subsubsection.4.5.3.2}% 
+\contentsline {section}{\numberline {4.6}mpx.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{38}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{39}{subsection.4.6.1}% 
+\contentsline {section}{\numberline {4.7}mpx.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{39}{section.4.7}% 
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{39}{subsection.4.7.1}% 
+\contentsline {section}{\numberline {4.8}respi\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Esp\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mit.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino File Reference}{39}{section.4.8}% 
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{40}{subsection.4.8.1}% 
+\contentsline {subsection}{\numberline {4.8.2}Function Documentation}{41}{subsection.4.8.2}% 
+\contentsline {subsubsection}{\numberline {4.8.2.1}loop()}{41}{subsubsection.4.8.2.1}% 
+\contentsline {subsubsection}{\numberline {4.8.2.2}readIncomingMsg()}{41}{subsubsection.4.8.2.2}% 
+\contentsline {subsubsection}{\numberline {4.8.2.3}setup()}{41}{subsubsection.4.8.2.3}% 
+\contentsline {subsection}{\numberline {4.8.3}Variable Documentation}{42}{subsection.4.8.3}% 
+\contentsline {subsubsection}{\numberline {4.8.3.1}pim}{42}{subsubsection.4.8.3.1}% 
+\contentsline {subsubsection}{\numberline {4.8.3.2}stepper}{42}{subsubsection.4.8.3.2}% 
+\contentsline {section}{\numberline {4.9}Sensors.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{42}{section.4.9}% 
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{43}{subsection.4.9.1}% 
+\contentsline {section}{\numberline {4.10}Sensors.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{43}{section.4.10}% 
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{43}{subsection.4.10.1}% 
+\contentsline {chapter}{Index}{45}{section*.27}% 

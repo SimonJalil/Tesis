@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Homtec 1.0: Fichero Fuente Sensors.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Homtec 1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_sensors_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sensors.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sensors_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#ifndef _SENSORS_H_</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#define _SENSORS_H_</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defaults_8h.html">defaults.h</a>&quot;</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#ifdef ENABLED_SENSOR_VOLUME_SFM3300</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#include &quot;src/SFM3200/sfm3000wedo.h&quot;</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME_STEPPER</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#include &quot;src/FlexyStepper/FlexyStepper.h&quot;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">//#include &quot;src/Adafruit_BME280/Adafruit_BME280.h&quot;</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">//#include &quot;src/Honeywell_ABP/Honeywell_ABP.h&quot;</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#define SENSORS_MAX_ERRORS 5</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME_SFM3300</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#define SFM3300_OFFSET 32768</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#define SFM3300_SCALE   120</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME_STEPPER</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#define    SENSOR_VOLUME_STEPPER_KVolumen 1.111F  //depende de la calibraci</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">  182</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a> {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    SensorStateOK = 0,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    SensorStateFailed = 1</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="struct_sensor_last_pressure__t.html">  200</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    uint8_t minPressure;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    uint8_t maxPressure;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;} <a class="code" href="struct_sensor_last_pressure__t.html">SensorLastPressure_t</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="struct_sensor_pressure_values__t.html">  222</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a> state;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">float</span> pressure1;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">float</span> pressure2;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;} <a class="code" href="struct_sensor_pressure_values__t.html">SensorPressureValues_t</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="struct_sensor_volume_value__t.html">  238</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a> state;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">short</span> volume; <span class="comment">// ml</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;} <a class="code" href="struct_sensor_volume_value__t.html">SensorVolumeValue_t</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="class_sensors.html">  257</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sensors.html">Sensors</a></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_sensors.html#a68ef7a2ec8dd0ffd9b35b70b50c0ab09">Sensors</a>();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sensors.html#ae15e58ec6ea15afb5fef334542c2ac98">begin</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sensors.html#a7eb14a5ad01c5b512b0b7864791a57e0">readPressure</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sensors.html#ad3753455c2c1042ee33ff632a6c0d823">Sensors::rutinaDeAutoajuste</a>(<span class="keywordtype">void</span>);<span class="comment">//&lt;&lt;&lt;&lt;&lt;----------------------------------</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="struct_sensor_last_pressure__t.html">SensorLastPressure_t</a> <a class="code" href="class_sensors.html#a1d78dad4e2ed95b32acb294700a7b53e">getLastPressure</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="struct_sensor_pressure_values__t.html">SensorPressureValues_t</a> <a class="code" href="class_sensors.html#ab7e2a96e368ad59c3ae8389b811564d9">getAbsolutePressureInPascals</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="struct_sensor_pressure_values__t.html">SensorPressureValues_t</a> <a class="code" href="class_sensors.html#ab883aa414e914520a8ccfe2369a3278a">getAbsolutePressureInCmH2O</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="struct_sensor_pressure_values__t.html">SensorPressureValues_t</a> <a class="code" href="class_sensors.html#a82a1cb80dc6bbc3d4679633db4860512">getRelativePressureInCmH2O</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sensors.html#af291396c70a275caa97d446026cf0a8a">resetPressures</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sensors.html#aae2ba2c7504ce280de6d246832a8984b">rebootVolumeSensor</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sensors.html#ad4f505543cf3a3aa8c454cd4ede3e481">readVolume</a>(</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;#<span class="keywordflow">if</span> ENABLED_SENSOR_VOLUME_STEPPER</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    FlexyStepper *<a class="code" href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;#<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;#endif </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    );</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> resetVolumeIntegrator(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sensors.html#a1245da2770e5cd1cac0e0118e51b60d5">getFlow</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sensors.html#ab066aaeddae4bcc6c04b863a5b399861">getVolumeActual</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="struct_sensor_volume_value__t.html">SensorVolumeValue_t</a> <a class="code" href="class_sensors.html#a06b6abc19fd9cdd55c4d0d2f7b98a45f">getVolume</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sensors.html#af86f2fec6823fa6d766c9102667421fb">saveVolume</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_sensors.html#ad401176b184a13e24f1661f1e85bb04b">stalledVolumeSensor</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">void</span> _init(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; <span class="comment">//   Adafruit_BME280 _pres1Sensor;</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; <span class="comment">//   Adafruit_BME280 _pres2Sensor;</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME_SFM3300</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    SFM3000wedo* _sfm3000;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    uint8_t _minPressure;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    uint8_t _maxPressure;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">float</span> _pressure1;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">float</span> _pressure2;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">float</span> _pressureSensorsOffset = 0.0;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a> _state;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a> _volumeState;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">byte</span> _errorCounter;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">volatile</span> uint8_t _lastMinPressure;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">volatile</span> uint8_t _lastMaxPressure;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">float</span> _volume_ml;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">float</span> _mylastVolume = 0;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">float</span> _flow;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> _lastVolume;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _lastReadFlow;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _flowRepetitionCounter = 0;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;};</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_sensors_html_ad4f505543cf3a3aa8c454cd4ede3e481"><div class="ttname"><a href="class_sensors.html#ad4f505543cf3a3aa8c454cd4ede3e481">Sensors::readVolume</a></div><div class="ttdeci">void readVolume(FlexyStepper *stepper)</div><div class="ttdoc">Función que lee volumen y lo guarda en la estructura correspondiente.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:239</div></div>
+<div class="ttc" id="aclass_sensors_html_af86f2fec6823fa6d766c9102667421fb"><div class="ttname"><a href="class_sensors.html#af86f2fec6823fa6d766c9102667421fb">Sensors::saveVolume</a></div><div class="ttdeci">void saveVolume(void)</div><div class="ttdoc">Función que guarda el volumen leído como última medida tomada en la estructura correspondiente.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:229</div></div>
+<div class="ttc" id="adefaults_8h_html"><div class="ttname"><a href="defaults_8h.html">defaults.h</a></div></div>
+<div class="ttc" id="astruct_sensor_volume_value__t_html"><div class="ttname"><a href="struct_sensor_volume_value__t.html">SensorVolumeValue_t</a></div><div class="ttdoc">Estructura que contiene información sobre el sensor de volumen.</div><div class="ttdef"><b>Definition:</b> Sensors.h:238</div></div>
+<div class="ttc" id="aclass_sensors_html_af291396c70a275caa97d446026cf0a8a"><div class="ttname"><a href="class_sensors.html#af291396c70a275caa97d446026cf0a8a">Sensors::resetPressures</a></div><div class="ttdeci">void resetPressures(void)</div><div class="ttdoc">Función que permite resetear los valores de presión de la estructura SensorLastPressure_t.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:311</div></div>
+<div class="ttc" id="aclass_sensors_html"><div class="ttname"><a href="class_sensors.html">Sensors</a></div><div class="ttdoc">Clase &quot;Sensores&quot;. Contiene las variables y definiciones de los métodos para utilizar los sensores de ...</div><div class="ttdef"><b>Definition:</b> Sensors.h:258</div></div>
+<div class="ttc" id="aclass_sensors_html_ab066aaeddae4bcc6c04b863a5b399861"><div class="ttname"><a href="class_sensors.html#ab066aaeddae4bcc6c04b863a5b399861">Sensors::getVolumeActual</a></div><div class="ttdeci">float getVolumeActual(void)</div><div class="ttdoc">Función que permite obtener el valor de volumen almacenado en la estructura Sensors.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:325</div></div>
+<div class="ttc" id="a_sensors_8h_html_a4e26684045a9059b9df2181c65cf2a00"><div class="ttname"><a href="_sensors_8h.html#a4e26684045a9059b9df2181c65cf2a00">SensorState</a></div><div class="ttdeci">SensorState</div><div class="ttdoc">Estructura de los posibles estados de un sensor.</div><div class="ttdef"><b>Definition:</b> Sensors.h:182</div></div>
+<div class="ttc" id="aclass_sensors_html_ab7e2a96e368ad59c3ae8389b811564d9"><div class="ttname"><a href="class_sensors.html#ab7e2a96e368ad59c3ae8389b811564d9">Sensors::getAbsolutePressureInPascals</a></div><div class="ttdeci">SensorPressureValues_t getAbsolutePressureInPascals(void)</div><div class="ttdoc">Función que permite obtener el valor absoluto de presión en Pascales.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:142</div></div>
+<div class="ttc" id="astruct_sensor_last_pressure__t_html"><div class="ttname"><a href="struct_sensor_last_pressure__t.html">SensorLastPressure_t</a></div><div class="ttdoc">Estructura que almacena las últimas lecturas del sensor de presión (mínima y máxima)</div><div class="ttdef"><b>Definition:</b> Sensors.h:200</div></div>
+<div class="ttc" id="aclass_sensors_html_a7eb14a5ad01c5b512b0b7864791a57e0"><div class="ttname"><a href="class_sensors.html#a7eb14a5ad01c5b512b0b7864791a57e0">Sensors::readPressure</a></div><div class="ttdeci">float readPressure(void)</div><div class="ttdoc">Funcion que lee el sensor de presión MPX 50XX.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:119</div></div>
+<div class="ttc" id="aclass_sensors_html_a06b6abc19fd9cdd55c4d0d2f7b98a45f"><div class="ttname"><a href="class_sensors.html#a06b6abc19fd9cdd55c4d0d2f7b98a45f">Sensors::getVolume</a></div><div class="ttdeci">SensorVolumeValue_t getVolume(void)</div><div class="ttdoc">Función que accede a los datos almacenados en la estructura SensorVolumeValue_t.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:345</div></div>
+<div class="ttc" id="aclass_sensors_html_ab883aa414e914520a8ccfe2369a3278a"><div class="ttname"><a href="class_sensors.html#ab883aa414e914520a8ccfe2369a3278a">Sensors::getAbsolutePressureInCmH2O</a></div><div class="ttdeci">SensorPressureValues_t getAbsolutePressureInCmH2O(void)</div><div class="ttdoc">Función que permite obtener el valor absoluto de presión en CmH20.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:190</div></div>
+<div class="ttc" id="aclass_sensors_html_a1245da2770e5cd1cac0e0118e51b60d5"><div class="ttname"><a href="class_sensors.html#a1245da2770e5cd1cac0e0118e51b60d5">Sensors::getFlow</a></div><div class="ttdeci">float getFlow(void)</div><div class="ttdoc">Función que permite obtener una medida de flujo.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:220</div></div>
+<div class="ttc" id="aclass_sensors_html_a68ef7a2ec8dd0ffd9b35b70b50c0ab09"><div class="ttname"><a href="class_sensors.html#a68ef7a2ec8dd0ffd9b35b70b50c0ab09">Sensors::Sensors</a></div><div class="ttdeci">Sensors()</div><div class="ttdoc">Funcion que comienza el proceso de inicialización de la clase sensores.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:39</div></div>
+<div class="ttc" id="astruct_sensor_pressure_values__t_html"><div class="ttname"><a href="struct_sensor_pressure_values__t.html">SensorPressureValues_t</a></div><div class="ttdef"><b>Definition:</b> Sensors.h:222</div></div>
+<div class="ttc" id="aclass_sensors_html_ad3753455c2c1042ee33ff632a6c0d823"><div class="ttname"><a href="class_sensors.html#ad3753455c2c1042ee33ff632a6c0d823">Sensors::rutinaDeAutoajuste</a></div><div class="ttdeci">void rutinaDeAutoajuste(void)</div><div class="ttdoc">Función para la autocalibración del sensor de presión. Permite calibrar el valor de offset al iniciar...</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:357</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_af84f125fad367d83677f5e999147dfb1"><div class="ttname"><a href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a></div><div class="ttdeci">FlexyStepper * stepper</div><div class="ttdoc">Puntero a clase que maneja motor paso a paso.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:112</div></div>
+<div class="ttc" id="aclass_sensors_html_ae15e58ec6ea15afb5fef334542c2ac98"><div class="ttname"><a href="class_sensors.html#ae15e58ec6ea15afb5fef334542c2ac98">Sensors::begin</a></div><div class="ttdeci">unsigned int begin(void)</div><div class="ttdoc">Función Dummy.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:27</div></div>
+<div class="ttc" id="aclass_sensors_html_a1d78dad4e2ed95b32acb294700a7b53e"><div class="ttname"><a href="class_sensors.html#a1d78dad4e2ed95b32acb294700a7b53e">Sensors::getLastPressure</a></div><div class="ttdeci">SensorLastPressure_t getLastPressure(void)</div><div class="ttdoc">Función que permite obtener la última presión leida.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:209</div></div>
+<div class="ttc" id="aclass_sensors_html_ad401176b184a13e24f1661f1e85bb04b"><div class="ttname"><a href="class_sensors.html#ad401176b184a13e24f1661f1e85bb04b">Sensors::stalledVolumeSensor</a></div><div class="ttdeci">bool stalledVolumeSensor()</div><div class="ttdoc">Función obsoleta. No usar, no borrar.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:101</div></div>
+<div class="ttc" id="aclass_sensors_html_a82a1cb80dc6bbc3d4679633db4860512"><div class="ttname"><a href="class_sensors.html#a82a1cb80dc6bbc3d4679633db4860512">Sensors::getRelativePressureInCmH2O</a></div><div class="ttdeci">SensorPressureValues_t getRelativePressureInCmH2O(void)</div><div class="ttdoc">Función que permite obtener el valor relativo de presión en CmH20.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:160</div></div>
+<div class="ttc" id="aclass_sensors_html_aae2ba2c7504ce280de6d246832a8984b"><div class="ttname"><a href="class_sensors.html#aae2ba2c7504ce280de6d246832a8984b">Sensors::rebootVolumeSensor</a></div><div class="ttdeci">void rebootVolumeSensor(void)</div><div class="ttdoc">Funcion que reestablece el valor del integrador para el sensor de volumen.</div><div class="ttdef"><b>Definition:</b> Sensors.cpp:79</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_sensors_8h.html">Sensors.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

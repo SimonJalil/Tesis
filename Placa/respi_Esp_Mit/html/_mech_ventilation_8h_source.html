@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Homtec 1.0: Fichero Fuente MechVentilation.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Homtec 1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_mech_ventilation_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">MechVentilation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mech_ventilation_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#ifndef INC_MECHANICAL_VENTILATION_H</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#define INC_MECHANICAL_VENTILATION_H</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpx_8h.html">mpx.h</a>&quot;</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#include &lt;float.h&gt;</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defaults_8h.html">defaults.h</a>&quot;</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="calc_8h.html">calc.h</a>&quot;</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sensors_8h.html">Sensors.h</a>&quot;</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#include &quot;src/AutoPID/AutoPID.h&quot;</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#include &quot;src/FlexyStepper/FlexyStepper.h&quot;</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">  431</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    Init_Insufflation = 1,</div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716">  434</a></span>&#160;    <a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716">State_Insufflation</a> = 2, </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    Init_Exsufflation = 3,</div>
+<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8">  436</a></span>&#160;    <a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8">State_Exsufflation</a> = 4, </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    State_Hold_In = 5,</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    State_Error_Pas = 6,</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    State_StandBy = 7,</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    State_Homing = 0,</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    State_Error = -1</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;};</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">// Timing Settings</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a01a11232a560a1fc8b1bfe9cd6b9dabc">  448</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_mech_ventilation_8h.html#a01a11232a560a1fc8b1bfe9cd6b9dabc">HOLD_IN_DURATION</a> = 30.0;  <span class="comment">// Duration (ms) to pause after inhalation</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a07648040cd7a3c263ca0a7874554f7ed">  449</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_mech_ventilation_8h.html#a07648040cd7a3c263ca0a7874554f7ed">MIN_PEEP_PAUSE</a> =50.0;    <span class="comment">// Time (ms) to pause after exhalation / before watching for an assisted inhalation</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a3d45b8e24000b01d19135f584df6a2e3">  450</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_mech_ventilation_8h.html#a3d45b8e24000b01d19135f584df6a2e3">MAX_EX_DURATION</a> = 1000.0;   <span class="comment">// Maximum exhale duration (ms)</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="_mech_ventilation_8h.html#a9beb837cd5e9aa27355a4a277dde3de1">  451</a></span>&#160;<span class="keyword">const</span> uint8_t <a class="code" href="_mech_ventilation_8h.html#a9beb837cd5e9aa27355a4a277dde3de1">VoluTidal</a>[20] = {91, 96, 101, 105,  <span class="comment">//0-18</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                               110, 115, 119, 124,</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                               129, 133, 138, 143,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                               148, 153, 158, 163,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                               168, 173, 178, 186};</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                           </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno"><a class="line" href="struct_configuration__t.html">  465</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordtype">float</span> pip;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> timeoutIns;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;} <a class="code" href="struct_configuration__t.html">Configuration_t</a>;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
+<div class="line"><a name="l00475"></a><span class="lineno"><a class="line" href="class_mech_ventilation.html">  475</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mech_ventilation.html">MechVentilation</a></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;{</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <a class="code" href="class_mech_ventilation.html#a4d8d700007779d4a2bad25ed5b10a300">MechVentilation</a>(</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        FlexyStepper *<a class="code" href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a>,</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <a class="code" href="class_sensors.html">Sensors</a> *<a class="code" href="respi___esp___mit_8ino.html#a9dbb2c6bea2ee106b928573a361c563f">sensors</a>,</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        AutoPID *pid,</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <a class="code" href="struct_ventilation_options__t.html">VentilationOptions_t</a> <a class="code" href="respi___esp___mit_8ino.html#ab0c307a3b6ff3565b9def5da194f8aef">options</a>);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">boolean</span> getStartWasTriggeredByPatient();</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordtype">void</span> setVentilationCyle_WaitTime(<span class="keywordtype">float</span> speedExsufflation);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mech_ventilation.html#a58ab9b6f496de13789d125bab37a8cda">start</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mech_ventilation.html#a3142f639071cb68dd10c93d2632f6609">stopMech</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    uint8_t getRunning(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mech_ventilation.html#a7dce42ea75a0b544dcf1522421decb33">evaluatePressure</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordtype">void</span> evaluate220V(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mech_ventilation.html#a6f9014514b4d399b3324458d970f5837">update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mech_ventilation.html#a0c7b4a21fe6b497e12a78a24b5006913">activateRecruitment</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <span class="keywordtype">void</span> deactivateRecruitment(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mech_ventilation.html#a2c4ba0a33cdc4fe5243bde1e226e38c1">getAlarms</a>(<span class="keywordtype">void</span>);<span class="comment">//&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keywordtype">bool</span> getSensorErrorDetected();</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    uint8_t getRPM(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordtype">short</span> getExsuflationTime(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordtype">short</span> getInsuflationTime(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordtype">short</span> getPeakInspiratoryPressure(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordtype">short</span> getPeakEspiratoryPressure(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keywordtype">short</span> getVolTidalPorcen(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordtype">short</span> getVolTidalByArray(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keywordtype">short</span> getIer(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordtype">short</span> getTh(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    uint8_t getPause(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    uint8_t getFrReal(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> getState(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    </div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_mech_ventilation.html#ae5e644c24396b633193f10001a7a2a01">setAlarms</a>(<span class="keywordtype">int</span> alarm_value);<span class="comment">//&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keywordtype">void</span>  resetAlarms(<span class="keywordtype">int</span> alarm_value);<span class="comment">//&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_mech_ventilation.html#ad3f44a2aa6cc5061ebbe95c8d1039cb2">setInsuflationTime</a>(uint8_t value);<span class="comment">//&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_mech_ventilation.html#a0f970d8729fc2c0f875970504203c7fc">getInsuflationTimeApp</a>(<span class="keywordtype">void</span>);<span class="comment">//&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordtype">void</span>  setRPM(uint8_t rpm);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordtype">void</span>  setPeakInspiratoryPressure(uint8_t pip);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordtype">void</span>  setPeakEspiratoryPressure(uint8_t <a class="code" href="respi___esp___mit_8ino.html#a67f2800c795eb2c0a99e83687028aaee">peep</a>);</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordtype">void</span>  setPause(uint8_t <a class="code" href="respi___esp___mit_8ino.html#a21c1700a5b4f7caa63984a84173a11d8">pause</a>);</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordtype">void</span>  setVolTidalInStep(uint8_t <a class="code" href="respi___esp___mit_8ino.html#adaea53bd5a033222e0017ffc3a010fd2">vt</a>);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keywordtype">void</span>  setVolTidalByArray(uint8_t <a class="code" href="respi___esp___mit_8ino.html#adaea53bd5a033222e0017ffc3a010fd2">vt</a>);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordtype">void</span>  setIer(uint8_t <a class="code" href="respi___esp___mit_8ino.html#a8c5b30a344fe5e0b25c8a03b2f895c15">ier</a>);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordtype">void</span>  setTh(uint8_t th);</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordtype">void</span>  goToPositionByDur(FlexyStepper *<a class="code" href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a>, <span class="keywordtype">int</span> goal_pos, <span class="keywordtype">int</span> cur_pos, <span class="keywordtype">int</span> dur); </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordtype">void</span>  setState(<a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> state);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    uint8_t GetPlateau(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> GetCiclos(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordtype">void</span> ResetCiclos(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    </div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordtype">void</span> _init(</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        FlexyStepper *<a class="code" href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a>,</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <a class="code" href="class_sensors.html">Sensors</a> *<a class="code" href="respi___esp___mit_8ino.html#a9dbb2c6bea2ee106b928573a361c563f">sensors</a>,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        AutoPID *pid,</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <a class="code" href="struct_ventilation_options__t.html">VentilationOptions_t</a> <a class="code" href="respi___esp___mit_8ino.html#ab0c307a3b6ff3565b9def5da194f8aef">options</a>);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordtype">int</span> _calculateInsuflationPosition (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  <span class="comment">// Returns the current time in seconds</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> now() { <span class="keywordflow">return</span> millis()*1e-3; }</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="comment">//void _setAlarm(Alarm alarm);</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordtype">void</span> _increaseInsuflationSpeed (<span class="keywordtype">byte</span> factor);</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordtype">void</span> _decreaseInsuflationSpeed (<span class="keywordtype">byte</span> factor);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordtype">void</span> _increaseInsuflation (<span class="keywordtype">byte</span> factor);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keywordtype">void</span> _decreaseInsuflation (<span class="keywordtype">byte</span> factor);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordtype">void</span> _setInspiratoryCycle(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="comment">/* Configuration parameters */</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    FlexyStepper *_stepper;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <a class="code" href="class_sensors.html">Sensors</a> *_sensors;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    AutoPID *_pid;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    uint8_t _pause ;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordtype">bool</span> enteringState;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordtype">bool</span> _hasTrigger;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> _triggerThreshold;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> tCycleTimer;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">volatile</span> _timeoutIns;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">volatile</span> _timeoutInsCopy;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">volatile</span> _tHoldIn;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">volatile</span> _tHoldInCopy;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> _timeoutEsp;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> _timeoutEspCopy;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">float</span> _durac_exu;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;     <span class="keyword">volatile</span> <span class="keywordtype">float</span> _durac_exuCopy;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;     </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <span class="keyword">volatile</span> uint8_t _difTime; </div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keyword">volatile</span> uint8_t _rpm;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="keywordtype">short</span> <span class="keyword">volatile</span> _pip;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordtype">short</span> _peep;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    uint8_t _volTidalSteps;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    uint8_t _volTidalStepsCopy;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keywordtype">float</span> _ier;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    uint8_t _thr;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    uint8_t _vt;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    </div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">volatile</span> _recruitmentMode = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="comment">/* Configuration */</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <a class="code" href="struct_configuration__t.html">Configuration_t</a> _nominalConfiguration;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="comment">/* Internal state */</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <a class="code" href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> _currentState = State_Homing;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">int</span> _currentAlarm = <a class="code" href="defaults_8h.html#a18fa021d04e9304c11b012fa17c56cbe">No_Alarm</a>;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordtype">float</span> _stepperSpeed;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">float</span> _stepperPos;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">bool</span> _running = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">bool</span> _sensor_error_detected;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keywordtype">bool</span> _startWasTriggeredByPatient = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">float</span> _currentPressure = 0.0;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _ciclos = 0;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="comment">//float _currentFlow = 0.0;</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="comment">//float _currentVolume = 0.0;</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> SumPlateau(uint8_t);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordtype">void</span> PromPlateau(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordtype">long</span> PressurePlateauTotal;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="keywordtype">long</span> PressurePlateauCont;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    uint8_t PressurePlateauProm;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="comment">/* Alarmas */</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordtype">int</span> Alarm_value;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;};</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INC_MECHANICAL_VENTILATION_H */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_ventilation_options__t_html"><div class="ttname"><a href="struct_ventilation_options__t.html">VentilationOptions_t</a></div><div class="ttdef"><b>Definition:</b> defaults.h:723</div></div>
+<div class="ttc" id="ampx_8h_html"><div class="ttname"><a href="mpx_8h.html">mpx.h</a></div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_adaea53bd5a033222e0017ffc3a010fd2"><div class="ttname"><a href="respi___esp___mit_8ino.html#adaea53bd5a033222e0017ffc3a010fd2">vt</a></div><div class="ttdeci">uint8_t vt</div><div class="ttdoc">Variable de configuración de Volumen Tidal.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:124</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_a21c1700a5b4f7caa63984a84173a11d8"><div class="ttname"><a href="respi___esp___mit_8ino.html#a21c1700a5b4f7caa63984a84173a11d8">pause</a></div><div class="ttdeci">uint8_t pause</div><div class="ttdoc">Variable de configuración de Pausa respiratoria.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:124</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a3142f639071cb68dd10c93d2632f6609"><div class="ttname"><a href="class_mech_ventilation.html#a3142f639071cb68dd10c93d2632f6609">MechVentilation::stopMech</a></div><div class="ttdeci">void stopMech(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:44</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a58ab9b6f496de13789d125bab37a8cda"><div class="ttname"><a href="class_mech_ventilation.html#a58ab9b6f496de13789d125bab37a8cda">MechVentilation::start</a></div><div class="ttdeci">void start(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:41</div></div>
+<div class="ttc" id="adefaults_8h_html"><div class="ttname"><a href="defaults_8h.html">defaults.h</a></div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_ad3f44a2aa6cc5061ebbe95c8d1039cb2"><div class="ttname"><a href="class_mech_ventilation.html#ad3f44a2aa6cc5061ebbe95c8d1039cb2">MechVentilation::setInsuflationTime</a></div><div class="ttdeci">void setInsuflationTime(uint8_t value)</div><div class="ttdoc">Función de seteo de la variable _tHoldIn.</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:836</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a0f970d8729fc2c0f875970504203c7fc"><div class="ttname"><a href="class_mech_ventilation.html#a0f970d8729fc2c0f875970504203c7fc">MechVentilation::getInsuflationTimeApp</a></div><div class="ttdeci">float getInsuflationTimeApp(void)</div><div class="ttdoc">Función que permite ver el valor de la variable _timeoutIns para sensor de presion MPX.</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:874</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716"><div class="ttname"><a href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716">State_Insufflation</a></div><div class="ttdeci">@ State_Insufflation</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:434</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a7dce42ea75a0b544dcf1522421decb33"><div class="ttname"><a href="class_mech_ventilation.html#a7dce42ea75a0b544dcf1522421decb33">MechVentilation::evaluatePressure</a></div><div class="ttdeci">void evaluatePressure(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:257</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8"><div class="ttname"><a href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8">State_Exsufflation</a></div><div class="ttdeci">@ State_Exsufflation</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:436</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a0c7b4a21fe6b497e12a78a24b5006913"><div class="ttname"><a href="class_mech_ventilation.html#a0c7b4a21fe6b497e12a78a24b5006913">MechVentilation::activateRecruitment</a></div><div class="ttdeci">void activateRecruitment(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:317</div></div>
+<div class="ttc" id="aclass_sensors_html"><div class="ttname"><a href="class_sensors.html">Sensors</a></div><div class="ttdoc">Clase &quot;Sensores&quot;. Contiene las variables y definiciones de los métodos para utilizar los sensores de ...</div><div class="ttdef"><b>Definition:</b> Sensors.h:258</div></div>
+<div class="ttc" id="astruct_configuration__t_html"><div class="ttname"><a href="struct_configuration__t.html">Configuration_t</a></div><div class="ttdoc">Estructura de configuración.</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:465</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a3d45b8e24000b01d19135f584df6a2e3"><div class="ttname"><a href="_mech_ventilation_8h.html#a3d45b8e24000b01d19135f584df6a2e3">MAX_EX_DURATION</a></div><div class="ttdeci">const float MAX_EX_DURATION</div><div class="ttdoc">duración máxima de exalación en ms</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:450</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a5d74787dedbc4e11c1ab15bf487e61f8"><div class="ttname"><a href="_mech_ventilation_8h.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a></div><div class="ttdeci">State</div><div class="ttdoc">Enumneración de los estados de la máquina de estados utilizada para el control de la ventilación mecá...</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:432</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a6f9014514b4d399b3324458d970f5837"><div class="ttname"><a href="class_mech_ventilation.html#a6f9014514b4d399b3324458d970f5837">MechVentilation::update</a></div><div class="ttdeci">void update(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:359</div></div>
+<div class="ttc" id="acalc_8h_html"><div class="ttname"><a href="calc_8h.html">calc.h</a></div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a2c4ba0a33cdc4fe5243bde1e226e38c1"><div class="ttname"><a href="class_mech_ventilation.html#a2c4ba0a33cdc4fe5243bde1e226e38c1">MechVentilation::getAlarms</a></div><div class="ttdeci">int getAlarms(void)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:812</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_a9dbb2c6bea2ee106b928573a361c563f"><div class="ttname"><a href="respi___esp___mit_8ino.html#a9dbb2c6bea2ee106b928573a361c563f">sensors</a></div><div class="ttdeci">Sensors * sensors</div><div class="ttdoc">Puntero a clase que maneja los sensores de presion, flujo, y otros eventualmente.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:113</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_a67f2800c795eb2c0a99e83687028aaee"><div class="ttname"><a href="respi___esp___mit_8ino.html#a67f2800c795eb2c0a99e83687028aaee">peep</a></div><div class="ttdeci">uint8_t peep</div><div class="ttdoc">Variable de configuración de Presión positiva al final de la expiración (en desuso).</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:124</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a07648040cd7a3c263ca0a7874554f7ed"><div class="ttname"><a href="_mech_ventilation_8h.html#a07648040cd7a3c263ca0a7874554f7ed">MIN_PEEP_PAUSE</a></div><div class="ttdeci">const float MIN_PEEP_PAUSE</div><div class="ttdoc">Duracion en ms de la pausa luego de la exsuflación. Durante este tiempo se espera por una posible rea...</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:449</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_ab0c307a3b6ff3565b9def5da194f8aef"><div class="ttname"><a href="respi___esp___mit_8ino.html#ab0c307a3b6ff3565b9def5da194f8aef">options</a></div><div class="ttdeci">VentilationOptions_t options</div><div class="ttdoc">Clase que configura las opciones por default de microcontrolador.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:116</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html"><div class="ttname"><a href="class_mech_ventilation.html">MechVentilation</a></div><div class="ttdoc">Clase &quot;mech Ventilation&quot;. Contiene las variables y definiciones de los métodos para controlar la vent...</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:476</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_a4d8d700007779d4a2bad25ed5b10a300"><div class="ttname"><a href="class_mech_ventilation.html#a4d8d700007779d4a2bad25ed5b10a300">MechVentilation::MechVentilation</a></div><div class="ttdeci">MechVentilation(FlexyStepper *stepper, Sensors *sensors, AutoPID *pid, VentilationOptions_t options)</div><div class="ttdoc">Construct a new Mech Ventilation object.</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:13</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a01a11232a560a1fc8b1bfe9cd6b9dabc"><div class="ttname"><a href="_mech_ventilation_8h.html#a01a11232a560a1fc8b1bfe9cd6b9dabc">HOLD_IN_DURATION</a></div><div class="ttdeci">const float HOLD_IN_DURATION</div><div class="ttdoc">Seteos para la temporización.</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:448</div></div>
+<div class="ttc" id="a_mech_ventilation_8h_html_a9beb837cd5e9aa27355a4a277dde3de1"><div class="ttname"><a href="_mech_ventilation_8h.html#a9beb837cd5e9aa27355a4a277dde3de1">VoluTidal</a></div><div class="ttdeci">const uint8_t VoluTidal[20]</div><div class="ttdoc">Arreglo donde se guarda el volumen tidal.</div><div class="ttdef"><b>Definition:</b> MechVentilation.h:451</div></div>
+<div class="ttc" id="a_sensors_8h_html"><div class="ttname"><a href="_sensors_8h.html">Sensors.h</a></div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_af84f125fad367d83677f5e999147dfb1"><div class="ttname"><a href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a></div><div class="ttdeci">FlexyStepper * stepper</div><div class="ttdoc">Puntero a clase que maneja motor paso a paso.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:112</div></div>
+<div class="ttc" id="arespi___esp___mit_8ino_html_a8c5b30a344fe5e0b25c8a03b2f895c15"><div class="ttname"><a href="respi___esp___mit_8ino.html#a8c5b30a344fe5e0b25c8a03b2f895c15">ier</a></div><div class="ttdeci">uint8_t ier</div><div class="ttdoc">Variable de configuración de Relación inspiración expiración.</div><div class="ttdef"><b>Definition:</b> respi_Esp_Mit.ino:124</div></div>
+<div class="ttc" id="aclass_mech_ventilation_html_ae5e644c24396b633193f10001a7a2a01"><div class="ttname"><a href="class_mech_ventilation.html#ae5e644c24396b633193f10001a7a2a01">MechVentilation::setAlarms</a></div><div class="ttdeci">void setAlarms(int alarm_value)</div><div class="ttdef"><b>Definition:</b> MechVentilation.cpp:814</div></div>
+<div class="ttc" id="adefaults_8h_html_a18fa021d04e9304c11b012fa17c56cbe"><div class="ttname"><a href="defaults_8h.html#a18fa021d04e9304c11b012fa17c56cbe">No_Alarm</a></div><div class="ttdeci">#define No_Alarm</div><div class="ttdef"><b>Definition:</b> defaults.h:631</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_mech_ventilation_8h.html">MechVentilation.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

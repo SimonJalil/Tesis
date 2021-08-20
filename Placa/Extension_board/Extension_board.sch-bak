@@ -48,9 +48,9 @@ N2-Interfaz_SWD
 Text Label 4250 1650 2    50   ~ 0
 VIN
 NoConn ~ 6050 1650
-Text Label 2300 1650 0    50   ~ 0
-RXD-USB_DM
 Text Label 2300 1750 0    50   ~ 0
+RXD-USB_DM
+Text Label 2300 1650 0    50   ~ 0
 RXD-USB_DP
 Wire Wire Line
 	1950 1650 2300 1650
@@ -87,32 +87,32 @@ N6-STEVAL-STLCR01V1
 $Comp
 L Device:D_Zener D1
 U 1 1 60BFFB26
-P 2400 4650
-F 0 "D1" V 2354 4730 50  0000 L CNN
-F 1 "D_Zener" V 2445 4730 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 2400 4650 50  0001 C CNN
-F 3 "~" H 2400 4650 50  0001 C CNN
-	1    2400 4650
+P 2400 4700
+F 0 "D1" V 2354 4780 50  0000 L CNN
+F 1 "D_Zener" V 2445 4780 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 2400 4700 50  0001 C CNN
+F 3 "~" H 2400 4700 50  0001 C CNN
+	1    2400 4700
 	0    1    1    0   
 $EndComp
-Text Label 1200 4300 2    50   ~ 0
+Text Label 1200 4350 2    50   ~ 0
 V_USB
-Text Label 1150 4800 2    50   ~ 0
+Text Label 1150 4850 2    50   ~ 0
 GND
-Text Label 2550 4300 0    50   ~ 0
+Text Label 2550 4350 0    50   ~ 0
 VIN
 $Comp
 L Device:R R1
 U 1 1 60C00A3D
-P 1850 4300
-F 0 "R1" V 1643 4300 50  0000 C CNN
-F 1 "12Ω" V 1734 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1780 4300 50  0001 C CNN
-F 3 "~" H 1850 4300 50  0001 C CNN
-	1    1850 4300
+P 1850 4350
+F 0 "R1" V 1643 4350 50  0000 C CNN
+F 1 "12Ω" V 1734 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1780 4350 50  0001 C CNN
+F 3 "~" H 1850 4350 50  0001 C CNN
+	1    1850 4350
 	0    1    1    0   
 $EndComp
-Text Notes 950  3950 0    50   ~ 0
+Text Notes 950  4000 0    50   ~ 0
 N4-Regulación
 NoConn ~ 4250 2250
 NoConn ~ 6050 1450
@@ -123,19 +123,19 @@ I2C_SCL
 Text Notes 2350 2600 0    50   ~ 0
 N3-I2C
 Wire Wire Line
-	1150 4800 2400 4800
+	1150 4850 2400 4850
 Wire Wire Line
-	2400 4500 2400 4300
+	2400 4550 2400 4350
 Wire Wire Line
-	2400 4300 2550 4300
+	2400 4350 2550 4350
 Wire Notes Line
-	950  4000 950  4850
+	950  4050 950  4900
 Wire Notes Line
-	950  4850 2800 4850
+	950  4900 2800 4900
 Wire Notes Line
-	2800 4850 2800 4000
+	2800 4900 2800 4050
 Wire Notes Line
-	950  4000 2800 4000
+	950  4050 2800 4050
 Text Label 3100 2900 0    50   ~ 0
 GND
 Wire Wire Line
@@ -170,41 +170,41 @@ Wire Wire Line
 	1950 1450 2300 1450
 Wire Wire Line
 	1650 2200 2300 2200
-Text Notes 2950 4550 0    59   ~ 0
+Text Notes 2950 4600 0    59   ~ 0
 Rpz=(Vs-Vz)/((Iz*1.1)+Il+Ii2c)\nRpz=(5v-3.3v)/(53mA*1.1+100mA+150mA)\nRpz=1.2Ω
 $Comp
 L Device:LED D2
 U 1 1 60C6CD3B
-P 2000 5400
-F 0 "D2" H 1993 5145 50  0000 C CNN
-F 1 "LED" H 1993 5236 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm_IRBlack" H 2000 5400 50  0001 C CNN
-F 3 "~" H 2000 5400 50  0001 C CNN
-	1    2000 5400
+P 2000 5450
+F 0 "D2" H 1993 5195 50  0000 C CNN
+F 1 "LED" H 1993 5286 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRBlack" H 2000 5450 50  0001 C CNN
+F 3 "~" H 2000 5450 50  0001 C CNN
+	1    2000 5450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 60C6E1B1
-P 1450 5400
-F 0 "R4" V 1243 5400 50  0000 C CNN
-F 1 "1kΩ" V 1334 5400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1380 5400 50  0001 C CNN
-F 3 "~" H 1450 5400 50  0001 C CNN
-	1    1450 5400
+P 1450 5450
+F 0 "R4" V 1243 5450 50  0000 C CNN
+F 1 "1kΩ" V 1334 5450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1380 5450 50  0001 C CNN
+F 3 "~" H 1450 5450 50  0001 C CNN
+	1    1450 5450
 	0    1    1    0   
 $EndComp
-Text Label 2400 5400 0    50   ~ 0
+Text Label 2400 5450 0    50   ~ 0
 GND
 Wire Wire Line
-	2150 5400 2400 5400
+	2150 5450 2400 5450
 Wire Wire Line
-	1600 5400 1850 5400
-Text Label 1300 5400 2    50   ~ 0
+	1600 5450 1850 5450
+Text Label 1300 5450 2    50   ~ 0
 V_USB
 Wire Notes Line
-	2600 5100 950  5100
-Text Notes 1000 5050 0    50   ~ 0
+	2600 5150 950  5150
+Text Notes 1000 5100 0    50   ~ 0
 N5-LEDs
 $Comp
 L Connector:USB_B_Micro J1
@@ -218,11 +218,11 @@ F 3 "~" H 1450 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	950  5100 950  5500
+	950  5150 950  5550
 Wire Notes Line
-	950  5500 2600 5500
+	950  5550 2600 5550
 Wire Notes Line
-	2600 5500 2600 5100
+	2600 5550 2600 5150
 Wire Wire Line
 	1600 3000 1800 3000
 Wire Wire Line
@@ -235,19 +235,11 @@ Wire Wire Line
 	1300 3600 1800 3600
 Wire Wire Line
 	1800 3600 1800 3400
-NoConn ~ 1600 3400
-NoConn ~ 1200 3600
-Wire Notes Line
-	1000 3650 2200 3650
-Wire Notes Line
-	1000 2650 1000 3650
-Wire Notes Line
-	2200 2650 2200 3650
 Wire Wire Line
-	2000 4300 2400 4300
-Connection ~ 2400 4300
+	2000 4350 2400 4350
+Connection ~ 2400 4350
 Wire Wire Line
-	1200 4300 1700 4300
+	1200 4350 1700 4350
 Text Label 3100 3400 0    50   ~ 0
 VIN
 $Comp
@@ -282,9 +274,70 @@ Wire Notes Line
 	2350 2650 3500 2650
 Wire Notes Line
 	2350 3500 3500 3500
-NoConn ~ 1950 1850
 Text Label 1550 2150 2    50   ~ 0
 GND
 Wire Wire Line
 	1550 2050 1550 2150
+Text Label 1200 3750 2    50   ~ 0
+GND
+Wire Wire Line
+	1200 3600 1200 3750
+Wire Notes Line
+	1000 2650 1000 3800
+Wire Notes Line
+	1000 3800 2200 3800
+Wire Notes Line
+	2200 3800 2200 2650
+$Comp
+L freetronics_schematic:SW_PUSHBUTTON SW1
+U 1 1 610BD908
+P 1450 6150
+F 0 "SW1" H 1450 6415 50  0000 C CNN
+F 1 "SW_PUSHBUTTON" H 1450 6324 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1450 6150 60  0001 C CNN
+F 3 "" H 1450 6150 60  0000 C CNN
+	1    1450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 610BE494
+P 1750 6500
+F 0 "C1" H 1865 6546 50  0000 L CNN
+F 1 "C" H 1865 6455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1788 6350 50  0001 C CNN
+F 3 "~" H 1750 6500 50  0001 C CNN
+	1    1750 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6150 1750 6350
+Wire Wire Line
+	1750 6650 1150 6650
+Wire Wire Line
+	1150 6650 1150 6150
+Text Label 1150 6850 2    50   ~ 0
+GND
+Wire Wire Line
+	1150 6650 1150 6850
+Connection ~ 1150 6650
+Text Label 2000 6150 0    50   ~ 0
+RESET
+Wire Wire Line
+	1750 6150 2000 6150
+Connection ~ 1750 6150
+Wire Notes Line
+	950  5850 950  6900
+Wire Notes Line
+	950  6900 2300 6900
+Wire Notes Line
+	2300 6900 2300 5850
+Wire Notes Line
+	2300 5850 950  5850
+Text Notes 950  5850 0    50   ~ 0
+N7-Reset
+Text Label 1600 3400 0    50   ~ 0
+GND
+Text Label 1950 1850 0    50   ~ 0
+GND
 $EndSCHEMATC

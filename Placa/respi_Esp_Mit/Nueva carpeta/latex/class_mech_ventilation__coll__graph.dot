@@ -1,0 +1,8 @@
+digraph "MechVentilation"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MechVentilation\n||+ MechVentilation()\l+ getStartWasTriggeredByPatient()\l+ setVentilationCyle\l_WaitTime()\l+ start()\l+ stopMech()\l+ getRunning()\l+ evaluatePressure()\l+ evaluate220V()\l+ update()\l+ activateRecruitment()\ly 32 más...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clase \"mech Ventilation\". Contiene las variables y definiciones de los métodos para controlar la vent..."];
+}

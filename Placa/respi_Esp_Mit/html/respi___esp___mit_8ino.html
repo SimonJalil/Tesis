@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Homtec 1.0: Referencia del Archivo respi_Esp_Mit.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Homtec 1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('respi___esp___mit_8ino.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo respi_Esp_Mit.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="defaults_8h_source.html">defaults.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="calc_8h_source.html">calc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sensors_8h_source.html">Sensors.h</a>&quot;</code><br />
+<code>#include &lt;EEPROM.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_mech_ventilation_8h_source.html">MechVentilation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpx_8h_source.html">mpx.h</a>&quot;</code><br />
+<code>#include &quot;src/AutoPID/AutoPID.h&quot;</code><br />
+<code>#include &quot;src/FlexyStepper/FlexyStepper.h&quot;</code><br />
+<code>#include &quot;src/TimerOne/TimerOne.h&quot;</code><br />
+<code>#include &quot;src/TimerThree/TimerThree.h&quot;</code><br />
+<code>#include &lt;avr/wdt.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae6fa3f83b01439ad5e3ce3c898757962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#ae6fa3f83b01439ad5e3ce3c898757962">readIncomingMsg</a> (void)</td></tr>
+<tr class="memdesc:ae6fa3f83b01439ad5e3ce3c898757962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esta función es la encargada de implementar el protocolo de comunicación con la interfaz gráfica.  <a href="respi___esp___mit_8ino.html#ae6fa3f83b01439ad5e3ce3c898757962">Más...</a><br /></td></tr>
+<tr class="separator:ae6fa3f83b01439ad5e3ce3c898757962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d04139db3a5ad5713ecbd14d97da879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a1d04139db3a5ad5713ecbd14d97da879">setup</a> ()</td></tr>
+<tr class="memdesc:a1d04139db3a5ad5713ecbd14d97da879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función de inicio principal del microcontrolador.  <a href="respi___esp___mit_8ino.html#a1d04139db3a5ad5713ecbd14d97da879">Más...</a><br /></td></tr>
+<tr class="separator:a1d04139db3a5ad5713ecbd14d97da879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11debc633c690ca19cb27df5f971d73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a11debc633c690ca19cb27df5f971d73d">loop</a> ()</td></tr>
+<tr class="memdesc:a11debc633c690ca19cb27df5f971d73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función de bocle principal del microcontrolador.  <a href="respi___esp___mit_8ino.html#a11debc633c690ca19cb27df5f971d73d">Más...</a><br /></td></tr>
+<tr class="separator:a11debc633c690ca19cb27df5f971d73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424da119598a9d6c751b75c2c24ef97c"><td class="memItemLeft" align="right" valign="top"><a id="a424da119598a9d6c751b75c2c24ef97c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timer1Isr</b> (void)</td></tr>
+<tr class="separator:a424da119598a9d6c751b75c2c24ef97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6530b4f7e6b8861b6a24c0af1e3833"><td class="memItemLeft" align="right" valign="top"><a id="a1e6530b4f7e6b8861b6a24c0af1e3833"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timer3Isr</b> (void)</td></tr>
+<tr class="separator:a1e6530b4f7e6b8861b6a24c0af1e3833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af84f125fad367d83677f5e999147dfb1"><td class="memItemLeft" align="right" valign="top">FlexyStepper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">stepper</a> = new FlexyStepper()</td></tr>
+<tr class="memdesc:af84f125fad367d83677f5e999147dfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero a clase que maneja motor paso a paso.  <a href="respi___esp___mit_8ino.html#af84f125fad367d83677f5e999147dfb1">Más...</a><br /></td></tr>
+<tr class="separator:af84f125fad367d83677f5e999147dfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbb2c6bea2ee106b928573a361c563f"><td class="memItemLeft" align="right" valign="top"><a id="a9dbb2c6bea2ee106b928573a361c563f"></a>
+<a class="el" href="class_sensors.html">Sensors</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a9dbb2c6bea2ee106b928573a361c563f">sensors</a></td></tr>
+<tr class="memdesc:a9dbb2c6bea2ee106b928573a361c563f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero a clase que maneja los sensores de presion, flujo, y otros eventualmente. <br /></td></tr>
+<tr class="separator:a9dbb2c6bea2ee106b928573a361c563f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd2249d735caa200d8325a1a62ecf1b"><td class="memItemLeft" align="right" valign="top"><a id="affd2249d735caa200d8325a1a62ecf1b"></a>
+AutoPID *&#160;</td><td class="memItemRight" valign="bottom"><b>pid</b></td></tr>
+<tr class="separator:affd2249d735caa200d8325a1a62ecf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ed0d6c5a517310d902b3c1515f1442"><td class="memItemLeft" align="right" valign="top"><a id="a60ed0d6c5a517310d902b3c1515f1442"></a>
+<a class="el" href="class_mech_ventilation.html">MechVentilation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a60ed0d6c5a517310d902b3c1515f1442">ventilation</a></td></tr>
+<tr class="memdesc:a60ed0d6c5a517310d902b3c1515f1442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero a clase que maneja la maquina de estado principal del proceso respiratorio y del respirador en si mismo. <br /></td></tr>
+<tr class="separator:a60ed0d6c5a517310d902b3c1515f1442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c307a3b6ff3565b9def5da194f8aef"><td class="memItemLeft" align="right" valign="top"><a id="ab0c307a3b6ff3565b9def5da194f8aef"></a>
+<a class="el" href="struct_ventilation_options__t.html">VentilationOptions_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#ab0c307a3b6ff3565b9def5da194f8aef">options</a></td></tr>
+<tr class="memdesc:ab0c307a3b6ff3565b9def5da194f8aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase que configura las opciones por default de microcontrolador. <br /></td></tr>
+<tr class="separator:ab0c307a3b6ff3565b9def5da194f8aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbf2273f0cb16f189e77bae1c0f1d4f"><td class="memItemLeft" align="right" valign="top"><a id="a4dbf2273f0cb16f189e77bae1c0f1d4f"></a>
+volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a4dbf2273f0cb16f189e77bae1c0f1d4f">dirEPROM</a></td></tr>
+<tr class="memdesc:a4dbf2273f0cb16f189e77bae1c0f1d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direcció EEPROM donde se guarda la dirección de la estructura <a class="el" href="struct_ciclos_e_p_r_o_m.html" title="esta estructura conserva los ciclos que lleva funcionando el respirador y la cantidad de escrituras e...">CiclosEPROM</a>. <br /></td></tr>
+<tr class="separator:a4dbf2273f0cb16f189e77bae1c0f1d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6516611aa02016457c37acd273a5fed"><td class="memItemLeft" align="right" valign="top"><a id="ae6516611aa02016457c37acd273a5fed"></a>
+<a class="el" href="struct_ciclos_e_p_r_o_m.html">CiclosEPROM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#ae6516611aa02016457c37acd273a5fed">st_Ciclos</a></td></tr>
+<tr class="memdesc:ae6516611aa02016457c37acd273a5fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura que contiene la cantidad de ciclos y la cantidad de grabaciones en EEPROM. <br /></td></tr>
+<tr class="separator:ae6516611aa02016457c37acd273a5fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb5f7bd8a387d4d030f8d22a5fcffde"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a9bb5f7bd8a387d4d030f8d22a5fcffde">pim</a></td></tr>
+<tr class="memdesc:a9bb5f7bd8a387d4d030f8d22a5fcffde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Presión inspiratoria máxima.  <a href="respi___esp___mit_8ino.html#a9bb5f7bd8a387d4d030f8d22a5fcffde">Más...</a><br /></td></tr>
+<tr class="separator:a9bb5f7bd8a387d4d030f8d22a5fcffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f2800c795eb2c0a99e83687028aaee"><td class="memItemLeft" align="right" valign="top"><a id="a67f2800c795eb2c0a99e83687028aaee"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a67f2800c795eb2c0a99e83687028aaee">peep</a></td></tr>
+<tr class="memdesc:a67f2800c795eb2c0a99e83687028aaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Presión positiva al final de la expiración (en desuso). <br /></td></tr>
+<tr class="separator:a67f2800c795eb2c0a99e83687028aaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56941156be101c56f8b45dc2fefe3f95"><td class="memItemLeft" align="right" valign="top"><a id="a56941156be101c56f8b45dc2fefe3f95"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a56941156be101c56f8b45dc2fefe3f95">frecResp</a></td></tr>
+<tr class="memdesc:a56941156be101c56f8b45dc2fefe3f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Frecuencia respitatoria. <br /></td></tr>
+<tr class="separator:a56941156be101c56f8b45dc2fefe3f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5b30a344fe5e0b25c8a03b2f895c15"><td class="memItemLeft" align="right" valign="top"><a id="a8c5b30a344fe5e0b25c8a03b2f895c15"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a8c5b30a344fe5e0b25c8a03b2f895c15">ier</a></td></tr>
+<tr class="memdesc:a8c5b30a344fe5e0b25c8a03b2f895c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Relación inspiración expiración. <br /></td></tr>
+<tr class="separator:a8c5b30a344fe5e0b25c8a03b2f895c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaea53bd5a033222e0017ffc3a010fd2"><td class="memItemLeft" align="right" valign="top"><a id="adaea53bd5a033222e0017ffc3a010fd2"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#adaea53bd5a033222e0017ffc3a010fd2">vt</a></td></tr>
+<tr class="memdesc:adaea53bd5a033222e0017ffc3a010fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Volumen Tidal. <br /></td></tr>
+<tr class="separator:adaea53bd5a033222e0017ffc3a010fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06f382cf87b77d3db718744d4574c68"><td class="memItemLeft" align="right" valign="top"><a id="ab06f382cf87b77d3db718744d4574c68"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#ab06f382cf87b77d3db718744d4574c68">thr</a></td></tr>
+<tr class="memdesc:ab06f382cf87b77d3db718744d4574c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Umbral de detección de inspiración. <br /></td></tr>
+<tr class="separator:ab06f382cf87b77d3db718744d4574c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c1700a5b4f7caa63984a84173a11d8"><td class="memItemLeft" align="right" valign="top"><a id="a21c1700a5b4f7caa63984a84173a11d8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a21c1700a5b4f7caa63984a84173a11d8">pause</a></td></tr>
+<tr class="memdesc:a21c1700a5b4f7caa63984a84173a11d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Pausa respiratoria. <br /></td></tr>
+<tr class="separator:a21c1700a5b4f7caa63984a84173a11d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e746d765c3211687c754aaeadd372e"><td class="memItemLeft" align="right" valign="top"><a id="aa6e746d765c3211687c754aaeadd372e"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#aa6e746d765c3211687c754aaeadd372e">encend</a></td></tr>
+<tr class="memdesc:aa6e746d765c3211687c754aaeadd372e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Encendido-Apagado de respirador. <br /></td></tr>
+<tr class="separator:aa6e746d765c3211687c754aaeadd372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d5675224d66d467c8b8993b0597038"><td class="memItemLeft" align="right" valign="top"><a id="a92d5675224d66d467c8b8993b0597038"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="respi___esp___mit_8ino.html#a92d5675224d66d467c8b8993b0597038">tins</a></td></tr>
+<tr class="memdesc:a92d5675224d66d467c8b8993b0597038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable de configuración de Tiempo de inspiración. <br /></td></tr>
+<tr class="separator:a92d5675224d66d467c8b8993b0597038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>HOMTEC Team </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2020-08-26</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>GPLv3 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a11debc633c690ca19cb27df5f971d73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11debc633c690ca19cb27df5f971d73d">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función de bocle principal del microcontrolador. </p>
+<p>A través de valores temporizado de menor prioridad que los timers, realiza actualización grafica y de valores medidos a la interfaz cada 100ms. Además cada 10 minutos actualiza los ciclos de la maquina. </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ninguno</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>ninguno </dd></dl>
+
+</div>
+</div>
+<a id="ae6fa3f83b01439ad5e3ce3c898757962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fa3f83b01439ad5e3ce3c898757962">&#9670;&nbsp;</a></span>readIncomingMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readIncomingMsg </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Esta función es la encargada de implementar el protocolo de comunicación con la interfaz gráfica. </p>
+<p>Permite configurar valores tipicos en los procesos respiratorio y realiza una retransmisión de hacia la interfaz como chequeo de parámetros. Formato: "CONFIG %d %d %d %d %d %d %d %d %d#" </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ninguno</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>ninguno </dd></dl>
+
+</div>
+</div>
+<a id="a1d04139db3a5ad5713ecbd14d97da879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d04139db3a5ad5713ecbd14d97da879">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función de inicio principal del microcontrolador. </p>
+<p>Configura: los baudios de los dos puertos series de comnunicación, pines digitales de entreda-salida, inicializa sensores, PID (obsoleto), la máquina de estado <a class="el" href="class_mech_ventilation.html" title="Clase &quot;mech Ventilation&quot;. Contiene las variables y definiciones de los métodos para controlar la vent...">MechVentilation</a> y sus opciones. Maneja valores grabados en EEPROM y determina el inicio normal con calibración y valores por defectos, o el inicio rápido de emergencia con valores previos seteados. Actualiza valores para la interfaz. Configura temporizadores a 40us y 20ms para el motor paso a paso y para la maquina de estado, respectivamente. </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ninguno</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>ninguno </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a9bb5f7bd8a387d4d030f8d22a5fcffde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb5f7bd8a387d4d030f8d22a5fcffde">&#9670;&nbsp;</a></span>pim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable de configuración de Presión inspiratoria máxima. </p>
+<p>Read commands </p>
+
+</div>
+</div>
+<a id="af84f125fad367d83677f5e999147dfb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84f125fad367d83677f5e999147dfb1">&#9670;&nbsp;</a></span>stepper</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FlexyStepper * stepper = new FlexyStepper()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Puntero a clase que maneja motor paso a paso. </p>
+<p>Dependencies </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="respi___esp___mit_8ino.html">respi_Esp_Mit.ino</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

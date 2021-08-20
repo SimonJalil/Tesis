@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Homtec 1.0: Fichero Fuente mpx.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Homtec 1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mpx_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mpx.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mpx_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifndef _MPX_H_</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define _MPX_H_</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defaults_8h.html">defaults.h</a>&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#if ENABLED_SENSOR_VOLUME_byPRESSURE</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define    byPRESSURE_DELTA 1.1839    //   kg/m3  346.13m/s   -&gt; a 25�C</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define    byPRESSURE_SECCION 0.14</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define    byPRESSURE_KDELTA  3 //((-16,893) * byPRESSURE_SECCION* byPRESSURE_SECCION)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html">  110</a></span>&#160; <span class="keyword">class </span><a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html">MPX_PRESSURE_SENSOR</a></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">float</span> max_pressure;     <span class="comment">//kPa </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">float</span> min_pressure;     <span class="comment">//kPa</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">float</span> pressure;         <span class="comment">//Valor de lectura en kPa</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">float</span> _offset;          <span class="comment">//Valor en volts</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  uint8_t _pin;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a4469cf09582b4a8721204fcacd01f2de">autoajuste</a> (<span class="keywordtype">float</span> offset);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a97f225571ee1bfb591108cccd438ef62">setOffsetValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a9b25e6fb94643542cd9745c93b2bf5c2">getOffsetValue</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a687a93efd5e2ec2263671f2bb335ba6a">MPX_PRESSURE_SENSOR</a>(uint8_t pin);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#ad15e5be5b40513c5104e922b11236fc8">MPX_SET_ADC</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#ae88d21e15184217dfbe206e667c3bb04">MPX_READ_PRESSURE</a>(<span class="keywordtype">void</span>);    </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a9150be89dadb24b20e1920bcd6df98e1">MPX_CONVERT_PRESSURE</a>(<span class="keywordtype">float</span> Vfinal);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#afb3ab90f770b5538000092109dd611d0">MPX_CONVERT_cmH20</a>(<span class="keywordtype">float</span> pressureKPA);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">  #if ENABLED_SENSOR_VOLUME_byPRESSURE</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;       <span class="keywordtype">float</span> MPX_CONVERT_flujo(); </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  </div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a4eedbe08407e48467fffe161008d8ee8">  231</a></span>&#160;    <a class="code" href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a4eedbe08407e48467fffe161008d8ee8">~MPX_PRESSURE_SENSOR</a>(){};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;   </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif // MPX_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="adefaults_8h_html"><div class="ttname"><a href="defaults_8h.html">defaults.h</a></div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a4469cf09582b4a8721204fcacd01f2de"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a4469cf09582b4a8721204fcacd01f2de">MPX_PRESSURE_SENSOR::autoajuste</a></div><div class="ttdeci">float autoajuste(float offset)</div><div class="ttdoc">Función de autoajuste para sensor de presion MPX.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:12</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a9150be89dadb24b20e1920bcd6df98e1"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a9150be89dadb24b20e1920bcd6df98e1">MPX_PRESSURE_SENSOR::MPX_CONVERT_PRESSURE</a></div><div class="ttdeci">float MPX_CONVERT_PRESSURE(float Vfinal)</div><div class="ttdoc">Realiza conversion a KPa desde la tension leida previemente.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:128</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_ae88d21e15184217dfbe206e667c3bb04"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#ae88d21e15184217dfbe206e667c3bb04">MPX_PRESSURE_SENSOR::MPX_READ_PRESSURE</a></div><div class="ttdeci">float MPX_READ_PRESSURE(void)</div><div class="ttdoc">Realiza la lectura de presión analogica.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:104</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a9b25e6fb94643542cd9745c93b2bf5c2"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a9b25e6fb94643542cd9745c93b2bf5c2">MPX_PRESSURE_SENSOR::getOffsetValue</a></div><div class="ttdeci">float getOffsetValue(void)</div><div class="ttdoc">Función que permite ver el valor de la variable offset para sensor de presion MPX.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:73</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a687a93efd5e2ec2263671f2bb335ba6a"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a687a93efd5e2ec2263671f2bb335ba6a">MPX_PRESSURE_SENSOR::MPX_PRESSURE_SENSOR</a></div><div class="ttdeci">MPX_PRESSURE_SENSOR(uint8_t pin)</div><div class="ttdoc">Constructor del objeto sensor de presion MPX.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:80</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_afb3ab90f770b5538000092109dd611d0"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#afb3ab90f770b5538000092109dd611d0">MPX_PRESSURE_SENSOR::MPX_CONVERT_cmH20</a></div><div class="ttdeci">float MPX_CONVERT_cmH20(float pressureKPA)</div><div class="ttdoc">Realiza conversion del valor de presión en KPa a cmH20.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:139</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a4eedbe08407e48467fffe161008d8ee8"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a4eedbe08407e48467fffe161008d8ee8">MPX_PRESSURE_SENSOR::~MPX_PRESSURE_SENSOR</a></div><div class="ttdeci">~MPX_PRESSURE_SENSOR()</div><div class="ttdoc">Realiza una estimación del flujo basándose en mediciones de presión.</div><div class="ttdef"><b>Definition:</b> mpx.h:231</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_a97f225571ee1bfb591108cccd438ef62"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a97f225571ee1bfb591108cccd438ef62">MPX_PRESSURE_SENSOR::setOffsetValue</a></div><div class="ttdeci">void setOffsetValue(float value)</div><div class="ttdoc">Función de seteo de la variable offset para sensor de presion MPX.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:67</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html_ad15e5be5b40513c5104e922b11236fc8"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#ad15e5be5b40513c5104e922b11236fc8">MPX_PRESSURE_SENSOR::MPX_SET_ADC</a></div><div class="ttdeci">void MPX_SET_ADC(void)</div><div class="ttdoc">Configura la tensión de referencia del ADC basado en el sensor definido por ENABLED_SENSOR_MPX5050.</div><div class="ttdef"><b>Definition:</b> mpx.cpp:90</div></div>
+<div class="ttc" id="aclass_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_html"><div class="ttname"><a href="class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html">MPX_PRESSURE_SENSOR</a></div><div class="ttdoc">Clase que almacena valores del sensosr de presión.</div><div class="ttdef"><b>Definition:</b> mpx.h:111</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="mpx_8h.html">mpx.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

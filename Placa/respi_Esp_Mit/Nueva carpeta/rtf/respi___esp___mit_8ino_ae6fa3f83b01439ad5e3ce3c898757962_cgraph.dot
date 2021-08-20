@@ -1,0 +1,19 @@
+digraph "readIncomingMsg"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="readIncomingMsg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Esta función es la encargada de implementar el protocolo de comunicación con la interfaz gráfica."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MechVentilation::activate\lRecruitment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mech_ventilation.html#a0c7b4a21fe6b497e12a78a24b5006913",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MechVentilation::getInsuflation\lTimeApp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mech_ventilation.html#a0f970d8729fc2c0f875970504203c7fc",tooltip="Función que permite ver el valor de la variable _timeoutIns para sensor de presion MPX."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MechVentilation::setInsuflationTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mech_ventilation.html#ad3f44a2aa6cc5061ebbe95c8d1039cb2",tooltip="Función de seteo de la variable _tHoldIn."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MechVentilation::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mech_ventilation.html#a58ab9b6f496de13789d125bab37a8cda",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MechVentilation::stopMech",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mech_ventilation.html#a3142f639071cb68dd10c93d2632f6609",tooltip=" "];
+}

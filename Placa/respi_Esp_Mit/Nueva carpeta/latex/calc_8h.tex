@@ -1,0 +1,83 @@
+\hypertarget{calc_8h}{}\doxysection{Referencia del Archivo calc.\+h}
+\label{calc_8h}\index{calc.h@{calc.h}}
+{\ttfamily \#include \char`\"{}defaults.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$avr/wdt.\+h$>$}\newline
+Dependencia gráfica adjunta para calc.\+h\+:
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
+% FIG 1
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calc_8h_a731804a9de0d750ca4f3ebe75d268373}{estimate\+Tidal\+Volume}} (int estatura, int sexo)
+\begin{DoxyCompactList}\small\item\em estima el volumen tidal en función de estatura y sexo, en ml. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{calc_8h_a458c3e10a6172ecae7ab517bec2dab6c}{Quick\+Select\+Median}} (unsigned int arr\mbox{[}$\,$\mbox{]}, uint8\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em filtro de media movil. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calc_8h_af641246d44249a8d06ab9783e219231b}{refresh\+Watch\+Dog\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Refresca el W\+DT (Watch Dog Timer) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Funciones de cálculo necesarias
+
+Este archivo contiene las declaraciones de las funciones de cálculo necesarias. 
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{calc_8h_a731804a9de0d750ca4f3ebe75d268373}\label{calc_8h_a731804a9de0d750ca4f3ebe75d268373}} 
+\index{calc.h@{calc.h}!estimateTidalVolume@{estimateTidalVolume}}
+\index{estimateTidalVolume@{estimateTidalVolume}!calc.h@{calc.h}}
+\doxysubsubsection{\texorpdfstring{estimateTidalVolume()}{estimateTidalVolume()}}
+{\footnotesize\ttfamily int estimate\+Tidal\+Volume (\begin{DoxyParamCaption}\item[{int}]{estatura,  }\item[{int}]{sexo }\end{DoxyParamCaption})}
+
+
+
+estima el volumen tidal en función de estatura y sexo, en ml. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em estatura} & en cm, del paciente \\
+\hline
+{\em sexo} & 0\+: varón, 1\+: mujer, sexo del paciente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+$\ast$volumen\+Tidal volumen tidal estimado, en mililitros 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calc_8h_a458c3e10a6172ecae7ab517bec2dab6c}\label{calc_8h_a458c3e10a6172ecae7ab517bec2dab6c}} 
+\index{calc.h@{calc.h}!QuickSelectMedian@{QuickSelectMedian}}
+\index{QuickSelectMedian@{QuickSelectMedian}!calc.h@{calc.h}}
+\doxysubsubsection{\texorpdfstring{QuickSelectMedian()}{QuickSelectMedian()}}
+{\footnotesize\ttfamily unsigned int Quick\+Select\+Median (\begin{DoxyParamCaption}\item[{unsigned int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+filtro de media movil. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em estatura} & en cm, del paciente \\
+\hline
+{\em sexo} & 0\+: varón, 1\+: mujer, sexo del paciente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+señal filtrada. 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+% FIG 2
+\mbox{\Hypertarget{calc_8h_af641246d44249a8d06ab9783e219231b}\label{calc_8h_af641246d44249a8d06ab9783e219231b}} 
+\index{calc.h@{calc.h}!refreshWatchDogTimer@{refreshWatchDogTimer}}
+\index{refreshWatchDogTimer@{refreshWatchDogTimer}!calc.h@{calc.h}}
+\doxysubsubsection{\texorpdfstring{refreshWatchDogTimer()}{refreshWatchDogTimer()}}
+{\footnotesize\ttfamily void refresh\+Watch\+Dog\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refresca el W\+DT (Watch Dog Timer) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \textbackslash{}returm ninguno \\
+\hline
+\end{DoxyParams}

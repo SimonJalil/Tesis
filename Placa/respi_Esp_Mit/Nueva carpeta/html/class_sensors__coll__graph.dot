@@ -1,0 +1,8 @@
+digraph "Sensors"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Sensors\n||+ Sensors()\l+ begin()\l+ readPressure()\l+ rutinaDeAutoajuste()\l+ getLastPressure()\l+ getAbsolutePressureInPascals()\l+ getAbsolutePressureInCmH2O()\l+ getRelativePressureInCmH2O()\l+ resetPressures()\l+ rebootVolumeSensor()\ly 7 más...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clase \"Sensores\". Contiene las variables y definiciones de los métodos para utilizar los sensores de ..."];
+}

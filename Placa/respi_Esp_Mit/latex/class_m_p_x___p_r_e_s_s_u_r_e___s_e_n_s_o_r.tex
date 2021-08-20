@@ -1,0 +1,235 @@
+\hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r}{}\doxysection{Referencia de la Clase M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+OR}
+\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r}\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+
+
+Clase que almacena valores del sensosr de presión.  
+
+
+
+
+{\ttfamily \#include $<$mpx.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4469cf09582b4a8721204fcacd01f2de}{autoajuste}} (float offset)
+\begin{DoxyCompactList}\small\item\em Función de autoajuste para sensor de presion M\+PX. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a97f225571ee1bfb591108cccd438ef62}{set\+Offset\+Value}} (float value)
+\begin{DoxyCompactList}\small\item\em Función de seteo de la variable offset para sensor de presion M\+PX. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9b25e6fb94643542cd9745c93b2bf5c2}{get\+Offset\+Value}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite ver el valor de la variable offset para sensor de presion M\+PX. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a687a93efd5e2ec2263671f2bb335ba6a}{M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+OR}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Constructor del objeto sensor de presion M\+PX. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ad15e5be5b40513c5104e922b11236fc8}{M\+P\+X\+\_\+\+S\+E\+T\+\_\+\+A\+DC}} (void)
+\begin{DoxyCompactList}\small\item\em Configura la tensión de referencia del A\+DC basado en el sensor definido por E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+P\+X5050. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ae88d21e15184217dfbe206e667c3bb04}{M\+P\+X\+\_\+\+R\+E\+A\+D\+\_\+\+P\+R\+E\+S\+S\+U\+RE}} (void)
+\begin{DoxyCompactList}\small\item\em Realiza la lectura de presión analogica. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9150be89dadb24b20e1920bcd6df98e1}{M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+R\+E\+S\+S\+U\+RE}} (float Vfinal)
+\begin{DoxyCompactList}\small\item\em Realiza conversion a K\+Pa desde la tension leida previemente. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_afb3ab90f770b5538000092109dd611d0}{M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+cm\+H20}} (float pressure\+K\+PA)
+\begin{DoxyCompactList}\small\item\em Realiza conversion del valor de presión en K\+Pa a cm\+H20. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4eedbe08407e48467fffe161008d8ee8}{$\sim$\+M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+OR}} ()
+\begin{DoxyCompactList}\small\item\em Realiza una estimación del flujo basándose en mediciones de presión. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que almacena valores del sensosr de presión. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a687a93efd5e2ec2263671f2bb335ba6a}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a687a93efd5e2ec2263671f2bb335ba6a}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{MPX\_PRESSURE\_SENSOR()}{MPX\_PRESSURE\_SENSOR()}}
+{\footnotesize\ttfamily M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+OR (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Constructor del objeto sensor de presion M\+PX. 
+
+\mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a687a93efd5e2ec2263671f2bb335ba6a}{M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R(uint8\+\_\+t pin)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4eedbe08407e48467fffe161008d8ee8}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4eedbe08407e48467fffe161008d8ee8}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!````~MPX\_PRESSURE\_SENSOR@{$\sim$MPX\_PRESSURE\_SENSOR}}
+\index{````~MPX\_PRESSURE\_SENSOR@{$\sim$MPX\_PRESSURE\_SENSOR}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{$\sim$MPX\_PRESSURE\_SENSOR()}{~MPX\_PRESSURE\_SENSOR()}}
+{\footnotesize\ttfamily M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::$\sim$\+M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Realiza una estimación del flujo basándose en mediciones de presión. 
+
+float M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+flujo();
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor de flujo estimado
+\end{DoxyReturn}
+Solo funciona si está habilitada la variable E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+by\+P\+R\+E\+S\+S\+U\+RE \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4eedbe08407e48467fffe161008d8ee8}{$\sim$\+M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R()}}
+
+Destructor 
+\begin{DoxyParams}{Parámetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4469cf09582b4a8721204fcacd01f2de}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a4469cf09582b4a8721204fcacd01f2de}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!autoajuste@{autoajuste}}
+\index{autoajuste@{autoajuste}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{autoajuste()}{autoajuste()}}
+{\footnotesize\ttfamily float M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::autoajuste (\begin{DoxyParamCaption}\item[{float}]{offset }\end{DoxyParamCaption})}
+
+
+
+Función de autoajuste para sensor de presion M\+PX. 
+
+float autoajuste (float offset) 
+\begin{DoxyParams}{Parámetros}
+{\em offset} & valor de offset con el cual se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+nuevo valor de offset ajustado
+\end{DoxyReturn}
+toma 10 medidas, realiza un promedio y compara el valor con el offset ingresado. En base a esa ccomparación realiza un ajuste del valor del offset para el sensor de presión. \mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9b25e6fb94643542cd9745c93b2bf5c2}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9b25e6fb94643542cd9745c93b2bf5c2}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!getOffsetValue@{getOffsetValue}}
+\index{getOffsetValue@{getOffsetValue}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{getOffsetValue()}{getOffsetValue()}}
+{\footnotesize\ttfamily float M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::get\+Offset\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite ver el valor de la variable offset para sensor de presion M\+PX. 
+
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9b25e6fb94643542cd9745c93b2bf5c2}{get\+Offset\+Value(void)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor de la variable de offset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_afb3ab90f770b5538000092109dd611d0}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_afb3ab90f770b5538000092109dd611d0}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_CONVERT\_cmH20@{MPX\_CONVERT\_cmH20}}
+\index{MPX\_CONVERT\_cmH20@{MPX\_CONVERT\_cmH20}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{MPX\_CONVERT\_cmH20()}{MPX\_CONVERT\_cmH20()}}
+{\footnotesize\ttfamily float M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+cm\+H20 (\begin{DoxyParamCaption}\item[{float}]{pressure\+K\+PA }\end{DoxyParamCaption})}
+
+
+
+Realiza conversion del valor de presión en K\+Pa a cm\+H20. 
+
+\mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_afb3ab90f770b5538000092109dd611d0}{M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+cm\+H20(float pressure\+K\+P\+A)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Valor} & de presión en K\+Pa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor en float que representa la presion en cm\+H2O 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9150be89dadb24b20e1920bcd6df98e1}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9150be89dadb24b20e1920bcd6df98e1}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_CONVERT\_PRESSURE@{MPX\_CONVERT\_PRESSURE}}
+\index{MPX\_CONVERT\_PRESSURE@{MPX\_CONVERT\_PRESSURE}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{MPX\_CONVERT\_PRESSURE()}{MPX\_CONVERT\_PRESSURE()}}
+{\footnotesize\ttfamily float M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+R\+E\+S\+S\+U\+RE (\begin{DoxyParamCaption}\item[{float}]{Vfinal }\end{DoxyParamCaption})}
+
+
+
+Realiza conversion a K\+Pa desde la tension leida previemente. 
+
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a9150be89dadb24b20e1920bcd6df98e1}{M\+P\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E(float Vfinal)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Tensión} & devuelta por \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ae88d21e15184217dfbe206e667c3bb04}{M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+R\+E\+A\+D\+\_\+\+P\+R\+E\+S\+S\+U\+RE}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor que representa la presion leída en K\+Pa
+\end{DoxyReturn}
+Dependiendo de la definición de E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+P\+X5050 mapea en los valores correcto. M\+PX 5010 Vout = VS x (0.\+09 x P + 0.\+04) = 0.\+45 x P + 0.\+2 P = (Vout -\/ 0.\+2)/0.45 = Vfinal /0.45 M\+PX 5050 Vout = VS (P x 0.\+018 + 0.\+04) P = Vfinal / 0.\+09 \mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ae88d21e15184217dfbe206e667c3bb04}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ae88d21e15184217dfbe206e667c3bb04}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_READ\_PRESSURE@{MPX\_READ\_PRESSURE}}
+\index{MPX\_READ\_PRESSURE@{MPX\_READ\_PRESSURE}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{MPX\_READ\_PRESSURE()}{MPX\_READ\_PRESSURE()}}
+{\footnotesize\ttfamily float M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+R\+E\+A\+D\+\_\+\+P\+R\+E\+S\+S\+U\+RE (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Realiza la lectura de presión analogica. 
+
+float \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ae88d21e15184217dfbe206e667c3bb04}{M\+P\+X\+\_\+\+R\+E\+A\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E(void)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor que representa el voltaje de la presion sin offset
+\end{DoxyReturn}
+Dependiendo de la definición de E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+P\+X5050 mapea la lectura del pin P\+I\+N\+\_\+\+M\+P\+X\+\_\+\+D\+A\+TA en los valores correcto \mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ad15e5be5b40513c5104e922b11236fc8}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ad15e5be5b40513c5104e922b11236fc8}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!MPX\_SET\_ADC@{MPX\_SET\_ADC}}
+\index{MPX\_SET\_ADC@{MPX\_SET\_ADC}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{MPX\_SET\_ADC()}{MPX\_SET\_ADC()}}
+{\footnotesize\ttfamily void M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::\+M\+P\+X\+\_\+\+S\+E\+T\+\_\+\+A\+DC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Configura la tensión de referencia del A\+DC basado en el sensor definido por E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+P\+X5050. 
+
+void \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_ad15e5be5b40513c5104e922b11236fc8}{M\+P\+X\+\_\+\+S\+E\+T\+\_\+\+A\+D\+C(void)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno
+\end{DoxyReturn}
+Si E\+N\+A\+B\+L\+E\+D\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+P\+X5050 = 1 la tensión de refencia es 1.\+1V, caso contrario la tensión será 2.\+56V \mbox{\Hypertarget{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a97f225571ee1bfb591108cccd438ef62}\label{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a97f225571ee1bfb591108cccd438ef62}} 
+\index{MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}!setOffsetValue@{setOffsetValue}}
+\index{setOffsetValue@{setOffsetValue}!MPX\_PRESSURE\_SENSOR@{MPX\_PRESSURE\_SENSOR}}
+\doxysubsubsection{\texorpdfstring{setOffsetValue()}{setOffsetValue()}}
+{\footnotesize\ttfamily void M\+P\+X\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+::set\+Offset\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Función de seteo de la variable offset para sensor de presion M\+PX. 
+
+void \mbox{\hyperlink{class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r_a97f225571ee1bfb591108cccd438ef62}{set\+Offset\+Value(float value)}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & valor a setear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mpx_8h}{mpx.\+h}}\item 
+\mbox{\hyperlink{mpx_8cpp}{mpx.\+cpp}}\end{DoxyCompactItemize}

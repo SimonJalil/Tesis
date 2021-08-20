@@ -1,0 +1,40 @@
+\hypertarget{_sensors_8h}{}\doxysection{Referencia del Archivo Sensors.\+h}
+\label{_sensors_8h}\index{Sensors.h@{Sensors.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}defaults.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+S\+F\+M3200/sfm3000wedo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Flexy\+Stepper/\+Flexy\+Stepper.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Estructura que almacena las últimas lecturas del sensor de presión (mínima y máxima) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_sensor_volume_value__t}{Sensor\+Volume\+Value\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Estructura que contiene información sobre el sensor de volumen. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_sensors}{Sensors}}
+\begin{DoxyCompactList}\small\item\em Clase \char`\"{}\+Sensores\char`\"{}. Contiene las variables y definiciones de los métodos para utilizar los sensores de presión y volumen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_sensors_8h_a4a9f2c2cd3973501a4622d7aeca8fa56}\label{_sensors_8h_a4a9f2c2cd3973501a4622d7aeca8fa56}} 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+X\+\_\+\+E\+R\+R\+O\+RS}~5
+\item 
+\mbox{\Hypertarget{_sensors_8h_a038d8e1fb109e7cd8ad63e3e8209592b}\label{_sensors_8h_a038d8e1fb109e7cd8ad63e3e8209592b}} 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+S\+T\+E\+P\+P\+E\+R\+\_\+\+K\+Volumen}~1.\+111F
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_sensors_8h_a4e26684045a9059b9df2181c65cf2a00}\label{_sensors_8h_a4e26684045a9059b9df2181c65cf2a00}} 
+enum \mbox{\hyperlink{_sensors_8h_a4e26684045a9059b9df2181c65cf2a00}{Sensor\+State}} \{ {\bfseries Sensor\+State\+OK} = 0, 
+{\bfseries Sensor\+State\+Failed} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Estructura de los posibles estados de un sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Estructuras con funciones necesarias para cada sensor
+
+Este archivo contiene las declaraciones de las estructuras con funciones necesarias para cada sensor 

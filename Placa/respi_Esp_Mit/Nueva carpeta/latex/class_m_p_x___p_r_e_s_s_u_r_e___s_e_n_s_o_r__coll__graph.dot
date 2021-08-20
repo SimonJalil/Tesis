@@ -1,0 +1,8 @@
+digraph "MPX_PRESSURE_SENSOR"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MPX_PRESSURE_SENSOR\n||+ autoajuste()\l+ setOffsetValue()\l+ getOffsetValue()\l+ MPX_PRESSURE_SENSOR()\l+ MPX_SET_ADC()\l+ MPX_READ_PRESSURE()\l+ MPX_CONVERT_PRESSURE()\l+ MPX_CONVERT_cmH20()\l+ ~MPX_PRESSURE_SENSOR()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clase que almacena valores del sensosr de presión."];
+}

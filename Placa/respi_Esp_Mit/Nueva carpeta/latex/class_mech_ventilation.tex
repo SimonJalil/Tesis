@@ -1,0 +1,267 @@
+\hypertarget{class_mech_ventilation}{}\doxysection{Referencia de la Clase Mech\+Ventilation}
+\label{class_mech_ventilation}\index{MechVentilation@{MechVentilation}}
+
+
+Clase \char`\"{}mech Ventilation\char`\"{}. Contiene las variables y definiciones de los métodos para controlar la ventilación mecánica.  
+
+
+
+
+{\ttfamily \#include $<$Mech\+Ventilation.\+h$>$}
+
+
+
+Diagrama de colaboración para Mech\+Ventilation\+:
+% FIG 0
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mech_ventilation_a4d8d700007779d4a2bad25ed5b10a300}{Mech\+Ventilation}} (Flexy\+Stepper $\ast$\mbox{\hyperlink{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}{stepper}}, \mbox{\hyperlink{class_sensors}{Sensors}} $\ast$\mbox{\hyperlink{respi___esp___mit_8ino_a9dbb2c6bea2ee106b928573a361c563f}{sensors}}, Auto\+P\+ID $\ast$pid, \mbox{\hyperlink{struct_ventilation_options__t}{Ventilation\+Options\+\_\+t}} \mbox{\hyperlink{respi___esp___mit_8ino_ab0c307a3b6ff3565b9def5da194f8aef}{options}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_mech}{Mech}} Ventilation object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mech_ventilation_a60f88f8077147845388844be1f038ca8}\label{class_mech_ventilation_a60f88f8077147845388844be1f038ca8}} 
+boolean {\bfseries get\+Start\+Was\+Triggered\+By\+Patient} ()
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a9986c0db115c89895f3183f47d29cb5d}\label{class_mech_ventilation_a9986c0db115c89895f3183f47d29cb5d}} 
+void {\bfseries set\+Ventilation\+Cyle\+\_\+\+Wait\+Time} (float speed\+Exsufflation)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_a58ab9b6f496de13789d125bab37a8cda}{start}} (void)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_a3142f639071cb68dd10c93d2632f6609}{stop\+Mech}} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a7e8e1e58c60af0e22a0487fb54ba803a}\label{class_mech_ventilation_a7e8e1e58c60af0e22a0487fb54ba803a}} 
+uint8\+\_\+t {\bfseries get\+Running} (void)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_a7dce42ea75a0b544dcf1522421decb33}{evaluate\+Pressure}} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ab6671a1de6b001a02e5d3c44f0b650b4}\label{class_mech_ventilation_ab6671a1de6b001a02e5d3c44f0b650b4}} 
+void {\bfseries evaluate220V} (void)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_a6f9014514b4d399b3324458d970f5837}{update}} (void)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_a0c7b4a21fe6b497e12a78a24b5006913}{activate\+Recruitment}} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_aa69d470a833b6e352b8282e2710e1fbb}\label{class_mech_ventilation_aa69d470a833b6e352b8282e2710e1fbb}} 
+void {\bfseries deactivate\+Recruitment} (void)
+\item 
+int \mbox{\hyperlink{class_mech_ventilation_a2c4ba0a33cdc4fe5243bde1e226e38c1}{get\+Alarms}} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ae089b15708cbd935d66be036d26cc66d}\label{class_mech_ventilation_ae089b15708cbd935d66be036d26cc66d}} 
+bool {\bfseries get\+Sensor\+Error\+Detected} ()
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a5357eeb02bdde05e8e7c77a50186a99c}\label{class_mech_ventilation_a5357eeb02bdde05e8e7c77a50186a99c}} 
+uint8\+\_\+t {\bfseries get\+R\+PM} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a7179871778b71b5f52c9e30e6473294b}\label{class_mech_ventilation_a7179871778b71b5f52c9e30e6473294b}} 
+short {\bfseries get\+Exsuflation\+Time} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a0fb3d7184f22b1441654056fb8c843fa}\label{class_mech_ventilation_a0fb3d7184f22b1441654056fb8c843fa}} 
+short {\bfseries get\+Insuflation\+Time} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a2a6b96262507a9d2ab04265b6d292ef2}\label{class_mech_ventilation_a2a6b96262507a9d2ab04265b6d292ef2}} 
+short {\bfseries get\+Peak\+Inspiratory\+Pressure} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a84406ab8e019d8e57c6e21b5fa1c3c47}\label{class_mech_ventilation_a84406ab8e019d8e57c6e21b5fa1c3c47}} 
+short {\bfseries get\+Peak\+Espiratory\+Pressure} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a430172bf97866042daac095c3276a770}\label{class_mech_ventilation_a430172bf97866042daac095c3276a770}} 
+short {\bfseries get\+Vol\+Tidal\+Porcen} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_abbf53920c6ae55c7fc526effaf0cecfc}\label{class_mech_ventilation_abbf53920c6ae55c7fc526effaf0cecfc}} 
+short {\bfseries get\+Vol\+Tidal\+By\+Array} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a062fd102dd193060f8fadd99fa62a28d}\label{class_mech_ventilation_a062fd102dd193060f8fadd99fa62a28d}} 
+short {\bfseries get\+Ier} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_af4acf1b9c15b0841f06bbed4ab9670b9}\label{class_mech_ventilation_af4acf1b9c15b0841f06bbed4ab9670b9}} 
+short {\bfseries get\+Th} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_aa91f5769ae769ffa0eaabd13012e3ed2}\label{class_mech_ventilation_aa91f5769ae769ffa0eaabd13012e3ed2}} 
+uint8\+\_\+t {\bfseries get\+Pause} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a1d238f58760f3f5a1368c24782d0d7a8}\label{class_mech_ventilation_a1d238f58760f3f5a1368c24782d0d7a8}} 
+uint8\+\_\+t {\bfseries get\+Fr\+Real} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ac32ef0b1c389cfc357b776a8f62745bb}\label{class_mech_ventilation_ac32ef0b1c389cfc357b776a8f62745bb}} 
+\mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} {\bfseries get\+State} (void)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_ae5e644c24396b633193f10001a7a2a01}{set\+Alarms}} (int alarm\+\_\+value)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_aa229764538a399985b44676346ca50b2}\label{class_mech_ventilation_aa229764538a399985b44676346ca50b2}} 
+void {\bfseries reset\+Alarms} (int alarm\+\_\+value)
+\item 
+void \mbox{\hyperlink{class_mech_ventilation_ad3f44a2aa6cc5061ebbe95c8d1039cb2}{set\+Insuflation\+Time}} (uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Función de seteo de la variable \+\_\+t\+Hold\+In. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mech_ventilation_a0f970d8729fc2c0f875970504203c7fc}{get\+Insuflation\+Time\+App}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite ver el valor de la variable \+\_\+timeout\+Ins para sensor de presion M\+PX. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mech_ventilation_a3df094f5473af5cea3d58d9f779a1a87}\label{class_mech_ventilation_a3df094f5473af5cea3d58d9f779a1a87}} 
+void {\bfseries set\+R\+PM} (uint8\+\_\+t rpm)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_afec98ccc292ca804c6592e633790556b}\label{class_mech_ventilation_afec98ccc292ca804c6592e633790556b}} 
+void {\bfseries set\+Peak\+Inspiratory\+Pressure} (uint8\+\_\+t pip)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ab4cf2fbd333686e056443d40e5cae91d}\label{class_mech_ventilation_ab4cf2fbd333686e056443d40e5cae91d}} 
+void {\bfseries set\+Peak\+Espiratory\+Pressure} (uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a67f2800c795eb2c0a99e83687028aaee}{peep}})
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a6d816b13e82545bd9dbb46309911fff4}\label{class_mech_ventilation_a6d816b13e82545bd9dbb46309911fff4}} 
+void {\bfseries set\+Pause} (uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a21c1700a5b4f7caa63984a84173a11d8}{pause}})
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a97eedebd6387bfc8f7cfb9bdffdde38e}\label{class_mech_ventilation_a97eedebd6387bfc8f7cfb9bdffdde38e}} 
+void {\bfseries set\+Vol\+Tidal\+In\+Step} (uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_adaea53bd5a033222e0017ffc3a010fd2}{vt}})
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_af0d75ee3d0fa4a0354a9ce079c533e81}\label{class_mech_ventilation_af0d75ee3d0fa4a0354a9ce079c533e81}} 
+void {\bfseries set\+Vol\+Tidal\+By\+Array} (uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_adaea53bd5a033222e0017ffc3a010fd2}{vt}})
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ad6669c22d103acab87b39b61052f5d58}\label{class_mech_ventilation_ad6669c22d103acab87b39b61052f5d58}} 
+void {\bfseries set\+Ier} (uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a8c5b30a344fe5e0b25c8a03b2f895c15}{ier}})
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a43c567abf47fccf940cee733078498f4}\label{class_mech_ventilation_a43c567abf47fccf940cee733078498f4}} 
+void {\bfseries set\+Th} (uint8\+\_\+t th)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a628e26984baaac1ee29cd3ebf9f52b53}\label{class_mech_ventilation_a628e26984baaac1ee29cd3ebf9f52b53}} 
+void {\bfseries go\+To\+Position\+By\+Dur} (Flexy\+Stepper $\ast$\mbox{\hyperlink{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}{stepper}}, int goal\+\_\+pos, int cur\+\_\+pos, int dur)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a5661929f0d6f9da7686beeac0d08112e}\label{class_mech_ventilation_a5661929f0d6f9da7686beeac0d08112e}} 
+void {\bfseries set\+State} (\mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} state)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_ade8b0f37d97e32eb3a15c85945bd9fb4}\label{class_mech_ventilation_ade8b0f37d97e32eb3a15c85945bd9fb4}} 
+uint8\+\_\+t {\bfseries Get\+Plateau} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a4c82c859de154635e173abf8fe79ad68}\label{class_mech_ventilation_a4c82c859de154635e173abf8fe79ad68}} 
+unsigned long {\bfseries Get\+Ciclos} (void)
+\item 
+\mbox{\Hypertarget{class_mech_ventilation_a143ef886e9507b7705f23cd7c38bd794}\label{class_mech_ventilation_a143ef886e9507b7705f23cd7c38bd794}} 
+void {\bfseries Reset\+Ciclos} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase \char`\"{}mech Ventilation\char`\"{}. Contiene las variables y definiciones de los métodos para controlar la ventilación mecánica. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_mech_ventilation_a4d8d700007779d4a2bad25ed5b10a300}\label{class_mech_ventilation_a4d8d700007779d4a2bad25ed5b10a300}} 
+\index{MechVentilation@{MechVentilation}!MechVentilation@{MechVentilation}}
+\index{MechVentilation@{MechVentilation}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{MechVentilation()}{MechVentilation()}}
+{\footnotesize\ttfamily Mech\+Ventilation\+::\+Mech\+Ventilation (\begin{DoxyParamCaption}\item[{Flexy\+Stepper $\ast$}]{stepper,  }\item[{\mbox{\hyperlink{class_sensors}{Sensors}} $\ast$}]{sensors,  }\item[{Auto\+P\+ID $\ast$}]{pid,  }\item[{\mbox{\hyperlink{struct_ventilation_options__t}{Ventilation\+Options\+\_\+t}}}]{options }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_mech}{Mech}} Ventilation object. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em stepper} & \\
+\hline
+{\em sensors} & \\
+\hline
+{\em pid} & \\
+\hline
+{\em options} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_mech_ventilation_a0c7b4a21fe6b497e12a78a24b5006913}\label{class_mech_ventilation_a0c7b4a21fe6b497e12a78a24b5006913}} 
+\index{MechVentilation@{MechVentilation}!activateRecruitment@{activateRecruitment}}
+\index{activateRecruitment@{activateRecruitment}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{activateRecruitment()}{activateRecruitment()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::activate\+Recruitment (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Recruitment Gráfico de llamadas a esta función\+:
+% FIG 1
+\mbox{\Hypertarget{class_mech_ventilation_a7dce42ea75a0b544dcf1522421decb33}\label{class_mech_ventilation_a7dce42ea75a0b544dcf1522421decb33}} 
+\index{MechVentilation@{MechVentilation}!evaluatePressure@{evaluatePressure}}
+\index{evaluatePressure@{evaluatePressure}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{evaluatePressure()}{evaluatePressure()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::evaluate\+Pressure (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Alarms \mbox{\Hypertarget{class_mech_ventilation_a2c4ba0a33cdc4fe5243bde1e226e38c1}\label{class_mech_ventilation_a2c4ba0a33cdc4fe5243bde1e226e38c1}} 
+\index{MechVentilation@{MechVentilation}!getAlarms@{getAlarms}}
+\index{getAlarms@{getAlarms}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{getAlarms()}{getAlarms()}}
+{\footnotesize\ttfamily int Mech\+Ventilation\+::get\+Alarms (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+getters \mbox{\Hypertarget{class_mech_ventilation_a0f970d8729fc2c0f875970504203c7fc}\label{class_mech_ventilation_a0f970d8729fc2c0f875970504203c7fc}} 
+\index{MechVentilation@{MechVentilation}!getInsuflationTimeApp@{getInsuflationTimeApp}}
+\index{getInsuflationTimeApp@{getInsuflationTimeApp}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{getInsuflationTimeApp()}{getInsuflationTimeApp()}}
+{\footnotesize\ttfamily float Mech\+Ventilation\+::get\+Insuflation\+Time\+App (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite ver el valor de la variable \+\_\+timeout\+Ins para sensor de presion M\+PX. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor de la variable \+\_\+timeout\+Ins
+\end{DoxyReturn}
+permite leer el valor de la variable \+\_\+timeout\+Ins Gráfico de llamadas a esta función\+:
+% FIG 2
+\mbox{\Hypertarget{class_mech_ventilation_ae5e644c24396b633193f10001a7a2a01}\label{class_mech_ventilation_ae5e644c24396b633193f10001a7a2a01}} 
+\index{MechVentilation@{MechVentilation}!setAlarms@{setAlarms}}
+\index{setAlarms@{setAlarms}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{setAlarms()}{setAlarms()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::set\+Alarms (\begin{DoxyParamCaption}\item[{int}]{alarm\+\_\+value }\end{DoxyParamCaption})}
+
+setters \mbox{\Hypertarget{class_mech_ventilation_ad3f44a2aa6cc5061ebbe95c8d1039cb2}\label{class_mech_ventilation_ad3f44a2aa6cc5061ebbe95c8d1039cb2}} 
+\index{MechVentilation@{MechVentilation}!setInsuflationTime@{setInsuflationTime}}
+\index{setInsuflationTime@{setInsuflationTime}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{setInsuflationTime()}{setInsuflationTime()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::set\+Insuflation\+Time (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Función de seteo de la variable \+\_\+t\+Hold\+In. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & valor a setear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno
+\end{DoxyReturn}
+permite cambiar el valor de la variable \+\_\+t\+Hold\+In y recalcular los demas valores de tiempos Gráfico de llamadas a esta función\+:
+% FIG 3
+\mbox{\Hypertarget{class_mech_ventilation_a58ab9b6f496de13789d125bab37a8cda}\label{class_mech_ventilation_a58ab9b6f496de13789d125bab37a8cda}} 
+\index{MechVentilation@{MechVentilation}!start@{start}}
+\index{start@{start}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Start mechanical ventilation. Gráfico de llamadas a esta función\+:
+% FIG 4
+\mbox{\Hypertarget{class_mech_ventilation_a3142f639071cb68dd10c93d2632f6609}\label{class_mech_ventilation_a3142f639071cb68dd10c93d2632f6609}} 
+\index{MechVentilation@{MechVentilation}!stopMech@{stopMech}}
+\index{stopMech@{stopMech}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{stopMech()}{stopMech()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::stop\+Mech (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Stop mechanical ventilation. Gráfico de llamadas a esta función\+:
+% FIG 5
+\mbox{\Hypertarget{class_mech_ventilation_a6f9014514b4d399b3324458d970f5837}\label{class_mech_ventilation_a6f9014514b4d399b3324458d970f5837}} 
+\index{MechVentilation@{MechVentilation}!update@{update}}
+\index{update@{update}!MechVentilation@{MechVentilation}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Mech\+Ventilation\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Update mechanical ventilation.
+
+If any control variable were to change, new value would be applied at the beginning of the next ventilation cycle.
+
+\begin{DoxyNote}{Nota}
+This method must be called on a timer loop.
+\end{DoxyNote}
+It\textquotesingle{}s called from timer1\+Isr Alarma?????? $<$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---Gráfico de llamadas para esta función\+:
+% FIG 6
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mech_ventilation_8h}{Mech\+Ventilation.\+h}}\item 
+\mbox{\hyperlink{_mech_ventilation_8cpp}{Mech\+Ventilation.\+cpp}}\end{DoxyCompactItemize}

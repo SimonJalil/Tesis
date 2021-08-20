@@ -1,0 +1,11 @@
+digraph "MPX_PRESSURE_SENSOR::MPX_READ_PRESSURE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MPX_PRESSURE_SENSOR\l::MPX_READ_PRESSURE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Realiza la lectura de presión analogica."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="QuickSelectMedian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calc_8cpp.html#ab669cf6818ac3cfabbb47c9d0a2dc2e9",tooltip="filtro de media movil."];
+}

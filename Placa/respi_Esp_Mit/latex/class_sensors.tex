@@ -1,0 +1,366 @@
+\hypertarget{class_sensors}{}\doxysection{Referencia de la Clase Sensors}
+\label{class_sensors}\index{Sensors@{Sensors}}
+
+
+Clase \char`\"{}\+Sensores\char`\"{}. Contiene las variables y definiciones de los métodos para utilizar los sensores de presión y volumen.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}{Sensors}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que comienza el proceso de inicialización de la clase sensores. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_sensors_ae15e58ec6ea15afb5fef334542c2ac98}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Función Dummy. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_sensors_a7eb14a5ad01c5b512b0b7864791a57e0}{read\+Pressure}} (void)
+\begin{DoxyCompactList}\small\item\em Funcion que lee el sensor de presión M\+PX 50XX. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensors_ad3753455c2c1042ee33ff632a6c0d823}{rutina\+De\+Autoajuste}} (void)
+\begin{DoxyCompactList}\small\item\em Función para la autocalibración del sensor de presión. Permite calibrar el valor de offset al iniciar el sistema. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}} \mbox{\hyperlink{class_sensors_a1d78dad4e2ed95b32acb294700a7b53e}{get\+Last\+Pressure}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener la última presión leida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} \mbox{\hyperlink{class_sensors_ab7e2a96e368ad59c3ae8389b811564d9}{get\+Absolute\+Pressure\+In\+Pascals}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener el valor absoluto de presión en Pascales. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} \mbox{\hyperlink{class_sensors_ab883aa414e914520a8ccfe2369a3278a}{get\+Absolute\+Pressure\+In\+Cm\+H2O}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener el valor absoluto de presión en Cm\+H20. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} \mbox{\hyperlink{class_sensors_a82a1cb80dc6bbc3d4679633db4860512}{get\+Relative\+Pressure\+In\+Cm\+H2O}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener el valor relativo de presión en Cm\+H20. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensors_af291396c70a275caa97d446026cf0a8a}{reset\+Pressures}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite resetear los valores de presión de la estructura \mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensors_aae2ba2c7504ce280de6d246832a8984b}{reboot\+Volume\+Sensor}} (void)
+\begin{DoxyCompactList}\small\item\em Funcion que reestablece el valor del integrador para el sensor de volumen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensors_ad4f505543cf3a3aa8c454cd4ede3e481}{read\+Volume}} (Flexy\+Stepper $\ast$\mbox{\hyperlink{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}{stepper}})
+\begin{DoxyCompactList}\small\item\em Función que lee volumen y lo guarda en la estructura correspondiente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sensors_a6b1d7bc272ee2e4e664bb671a8b9efb1}\label{class_sensors_a6b1d7bc272ee2e4e664bb671a8b9efb1}} 
+void {\bfseries reset\+Volume\+Integrator} (void)
+\item 
+float \mbox{\hyperlink{class_sensors_a1245da2770e5cd1cac0e0118e51b60d5}{get\+Flow}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener una medida de flujo. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_sensors_ab066aaeddae4bcc6c04b863a5b399861}{get\+Volume\+Actual}} (void)
+\begin{DoxyCompactList}\small\item\em Función que permite obtener el valor de volumen almacenado en la estructura \mbox{\hyperlink{class_sensors}{Sensors}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sensor_volume_value__t}{Sensor\+Volume\+Value\+\_\+t}} \mbox{\hyperlink{class_sensors_a06b6abc19fd9cdd55c4d0d2f7b98a45f}{get\+Volume}} (void)
+\begin{DoxyCompactList}\small\item\em Función que accede a los datos almacenados en la estructura \mbox{\hyperlink{struct_sensor_volume_value__t}{Sensor\+Volume\+Value\+\_\+t}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensors_af86f2fec6823fa6d766c9102667421fb}{save\+Volume}} (void)
+\begin{DoxyCompactList}\small\item\em Función que guarda el volumen leído como última medida tomada en la estructura correspondiente. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sensors_ad401176b184a13e24f1661f1e85bb04b}{stalled\+Volume\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Función obsoleta. No usar, no borrar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase \char`\"{}\+Sensores\char`\"{}. Contiene las variables y definiciones de los métodos para utilizar los sensores de presión y volumen. 
+
+Función Dummy
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+0 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}\label{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}} 
+\index{Sensors@{Sensors}!Sensors@{Sensors}}
+\index{Sensors@{Sensors}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{Sensors()}{Sensors()}}
+{\footnotesize\ttfamily Sensors\+::\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que comienza el proceso de inicialización de la clase sensores. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sensors_ae15e58ec6ea15afb5fef334542c2ac98}\label{class_sensors_ae15e58ec6ea15afb5fef334542c2ac98}} 
+\index{Sensors@{Sensors}!begin@{begin}}
+\index{begin@{begin}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily unsigned int Sensors\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función Dummy. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ab883aa414e914520a8ccfe2369a3278a}\label{class_sensors_ab883aa414e914520a8ccfe2369a3278a}} 
+\index{Sensors@{Sensors}!getAbsolutePressureInCmH2O@{getAbsolutePressureInCmH2O}}
+\index{getAbsolutePressureInCmH2O@{getAbsolutePressureInCmH2O}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getAbsolutePressureInCmH2O()}{getAbsolutePressureInCmH2O()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} Sensors\+::get\+Absolute\+Pressure\+In\+Cm\+H2O (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener el valor absoluto de presión en Cm\+H20. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Sensor\+Values\+\_\+t -\/ values\+: Valor de presión obtenido convertido a Cm\+H20 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ab7e2a96e368ad59c3ae8389b811564d9}\label{class_sensors_ab7e2a96e368ad59c3ae8389b811564d9}} 
+\index{Sensors@{Sensors}!getAbsolutePressureInPascals@{getAbsolutePressureInPascals}}
+\index{getAbsolutePressureInPascals@{getAbsolutePressureInPascals}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getAbsolutePressureInPascals()}{getAbsolutePressureInPascals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} Sensors\+::get\+Absolute\+Pressure\+In\+Pascals (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener el valor absoluto de presión en Pascales. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Sensor\+Values\+\_\+t -\/ values\+: Valor de presión obtenido convertido a Pascales 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_a1245da2770e5cd1cac0e0118e51b60d5}\label{class_sensors_a1245da2770e5cd1cac0e0118e51b60d5}} 
+\index{Sensors@{Sensors}!getFlow@{getFlow}}
+\index{getFlow@{getFlow}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getFlow()}{getFlow()}}
+{\footnotesize\ttfamily float Sensors\+::get\+Flow (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener una medida de flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+float flow\+: valor de flujo obtenido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_a1d78dad4e2ed95b32acb294700a7b53e}\label{class_sensors_a1d78dad4e2ed95b32acb294700a7b53e}} 
+\index{Sensors@{Sensors}!getLastPressure@{getLastPressure}}
+\index{getLastPressure@{getLastPressure}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getLastPressure()}{getLastPressure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}} Sensors\+::get\+Last\+Pressure (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener la última presión leida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}} -\/ last\+Pres\+: Último valor de presión registrado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_a82a1cb80dc6bbc3d4679633db4860512}\label{class_sensors_a82a1cb80dc6bbc3d4679633db4860512}} 
+\index{Sensors@{Sensors}!getRelativePressureInCmH2O@{getRelativePressureInCmH2O}}
+\index{getRelativePressureInCmH2O@{getRelativePressureInCmH2O}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getRelativePressureInCmH2O()}{getRelativePressureInCmH2O()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_pressure_values__t}{Sensor\+Pressure\+Values\+\_\+t}} Sensors\+::get\+Relative\+Pressure\+In\+Cm\+H2O (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener el valor relativo de presión en Cm\+H20. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Sensor\+Values\+\_\+t -\/ values\+: Valor de presión obtenido convertido a Cm\+H20 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_a06b6abc19fd9cdd55c4d0d2f7b98a45f}\label{class_sensors_a06b6abc19fd9cdd55c4d0d2f7b98a45f}} 
+\index{Sensors@{Sensors}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_volume_value__t}{Sensor\+Volume\+Value\+\_\+t}} Sensors\+::get\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que accede a los datos almacenados en la estructura \mbox{\hyperlink{struct_sensor_volume_value__t}{Sensor\+Volume\+Value\+\_\+t}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+\_\+volume\+State 
+
+\+\_\+last\+Volume 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ab066aaeddae4bcc6c04b863a5b399861}\label{class_sensors_ab066aaeddae4bcc6c04b863a5b399861}} 
+\index{Sensors@{Sensors}!getVolumeActual@{getVolumeActual}}
+\index{getVolumeActual@{getVolumeActual}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{getVolumeActual()}{getVolumeActual()}}
+{\footnotesize\ttfamily float Sensors\+::get\+Volume\+Actual (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite obtener el valor de volumen almacenado en la estructura \mbox{\hyperlink{class_sensors}{Sensors}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+float \+\_\+volume\+\_\+ml 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_a7eb14a5ad01c5b512b0b7864791a57e0}\label{class_sensors_a7eb14a5ad01c5b512b0b7864791a57e0}} 
+\index{Sensors@{Sensors}!readPressure@{readPressure}}
+\index{readPressure@{readPressure}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{readPressure()}{readPressure()}}
+{\footnotesize\ttfamily float Sensors\+::read\+Pressure (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que lee el sensor de presión M\+PX 50XX. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ad4f505543cf3a3aa8c454cd4ede3e481}\label{class_sensors_ad4f505543cf3a3aa8c454cd4ede3e481}} 
+\index{Sensors@{Sensors}!readVolume@{readVolume}}
+\index{readVolume@{readVolume}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{readVolume()}{readVolume()}}
+{\footnotesize\ttfamily void Sensors\+::read\+Volume (\begin{DoxyParamCaption}\item[{Flexy\+Stepper $\ast$}]{stepper }\end{DoxyParamCaption})}
+
+
+
+Función que lee volumen y lo guarda en la estructura correspondiente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_aae2ba2c7504ce280de6d246832a8984b}\label{class_sensors_aae2ba2c7504ce280de6d246832a8984b}} 
+\index{Sensors@{Sensors}!rebootVolumeSensor@{rebootVolumeSensor}}
+\index{rebootVolumeSensor@{rebootVolumeSensor}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{rebootVolumeSensor()}{rebootVolumeSensor()}}
+{\footnotesize\ttfamily void Sensors\+::reboot\+Volume\+Sensor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que reestablece el valor del integrador para el sensor de volumen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_af291396c70a275caa97d446026cf0a8a}\label{class_sensors_af291396c70a275caa97d446026cf0a8a}} 
+\index{Sensors@{Sensors}!resetPressures@{resetPressures}}
+\index{resetPressures@{resetPressures}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{resetPressures()}{resetPressures()}}
+{\footnotesize\ttfamily void Sensors\+::reset\+Pressures (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que permite resetear los valores de presión de la estructura \mbox{\hyperlink{struct_sensor_last_pressure__t}{Sensor\+Last\+Pressure\+\_\+t}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ad3753455c2c1042ee33ff632a6c0d823}\label{class_sensors_ad3753455c2c1042ee33ff632a6c0d823}} 
+\index{Sensors@{Sensors}!rutinaDeAutoajuste@{rutinaDeAutoajuste}}
+\index{rutinaDeAutoajuste@{rutinaDeAutoajuste}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{rutinaDeAutoajuste()}{rutinaDeAutoajuste()}}
+{\footnotesize\ttfamily void Sensors\+::rutina\+De\+Autoajuste (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función para la autocalibración del sensor de presión. Permite calibrar el valor de offset al iniciar el sistema. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_af86f2fec6823fa6d766c9102667421fb}\label{class_sensors_af86f2fec6823fa6d766c9102667421fb}} 
+\index{Sensors@{Sensors}!saveVolume@{saveVolume}}
+\index{saveVolume@{saveVolume}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{saveVolume()}{saveVolume()}}
+{\footnotesize\ttfamily void Sensors\+::save\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Función que guarda el volumen leído como última medida tomada en la estructura correspondiente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensors_ad401176b184a13e24f1661f1e85bb04b}\label{class_sensors_ad401176b184a13e24f1661f1e85bb04b}} 
+\index{Sensors@{Sensors}!stalledVolumeSensor@{stalledVolumeSensor}}
+\index{stalledVolumeSensor@{stalledVolumeSensor}!Sensors@{Sensors}}
+\doxysubsubsection{\texorpdfstring{stalledVolumeSensor()}{stalledVolumeSensor()}}
+{\footnotesize\ttfamily bool Sensors\+::stalled\+Volume\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función obsoleta. No usar, no borrar. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Bool 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sensors_8h}{Sensors.\+h}}\item 
+\mbox{\hyperlink{_sensors_8cpp}{Sensors.\+cpp}}\end{DoxyCompactItemize}

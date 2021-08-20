@@ -1,0 +1,177 @@
+\hypertarget{respi___esp___mit_8ino}{}\doxysection{Referencia del Archivo respi\+\_\+\+Esp\+\_\+\+Mit.\+ino}
+\label{respi___esp___mit_8ino}\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+{\ttfamily \#include \char`\"{}defaults.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$E\+E\+P\+R\+O\+M.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Mech\+Ventilation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Auto\+P\+I\+D/\+Auto\+P\+I\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Flexy\+Stepper/\+Flexy\+Stepper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Timer\+One/\+Timer\+One.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Timer\+Three/\+Timer\+Three.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$avr/wdt.\+h$>$}\newline
+Dependencia gráfica adjunta para respi\+\_\+\+Esp\+\_\+\+Mit.\+ino\+:
+% FIG 0
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{respi___esp___mit_8ino_ae6fa3f83b01439ad5e3ce3c898757962}{read\+Incoming\+Msg}} (void)
+\begin{DoxyCompactList}\small\item\em Esta función es la encargada de implementar el protocolo de comunicación con la interfaz gráfica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{respi___esp___mit_8ino_a1d04139db3a5ad5713ecbd14d97da879}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Función de inicio principal del microcontrolador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{respi___esp___mit_8ino_a11debc633c690ca19cb27df5f971d73d}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Función de bocle principal del microcontrolador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a424da119598a9d6c751b75c2c24ef97c}\label{respi___esp___mit_8ino_a424da119598a9d6c751b75c2c24ef97c}} 
+void {\bfseries timer1\+Isr} (void)
+\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a1e6530b4f7e6b8861b6a24c0af1e3833}\label{respi___esp___mit_8ino_a1e6530b4f7e6b8861b6a24c0af1e3833}} 
+void {\bfseries timer3\+Isr} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Flexy\+Stepper $\ast$ \mbox{\hyperlink{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}{stepper}} = new Flexy\+Stepper()
+\begin{DoxyCompactList}\small\item\em Puntero a clase que maneja motor paso a paso. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a9dbb2c6bea2ee106b928573a361c563f}\label{respi___esp___mit_8ino_a9dbb2c6bea2ee106b928573a361c563f}} 
+\mbox{\hyperlink{class_sensors}{Sensors}} $\ast$ \mbox{\hyperlink{respi___esp___mit_8ino_a9dbb2c6bea2ee106b928573a361c563f}{sensors}}
+\begin{DoxyCompactList}\small\item\em Puntero a clase que maneja los sensores de presion, flujo, y otros eventualmente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_affd2249d735caa200d8325a1a62ecf1b}\label{respi___esp___mit_8ino_affd2249d735caa200d8325a1a62ecf1b}} 
+Auto\+P\+ID $\ast$ {\bfseries pid}
+\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a60ed0d6c5a517310d902b3c1515f1442}\label{respi___esp___mit_8ino_a60ed0d6c5a517310d902b3c1515f1442}} 
+\mbox{\hyperlink{class_mech_ventilation}{Mech\+Ventilation}} $\ast$ \mbox{\hyperlink{respi___esp___mit_8ino_a60ed0d6c5a517310d902b3c1515f1442}{ventilation}}
+\begin{DoxyCompactList}\small\item\em Puntero a clase que maneja la maquina de estado principal del proceso respiratorio y del respirador en si mismo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_ab0c307a3b6ff3565b9def5da194f8aef}\label{respi___esp___mit_8ino_ab0c307a3b6ff3565b9def5da194f8aef}} 
+\mbox{\hyperlink{struct_ventilation_options__t}{Ventilation\+Options\+\_\+t}} \mbox{\hyperlink{respi___esp___mit_8ino_ab0c307a3b6ff3565b9def5da194f8aef}{options}}
+\begin{DoxyCompactList}\small\item\em Clase que configura las opciones por default de microcontrolador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a4dbf2273f0cb16f189e77bae1c0f1d4f}\label{respi___esp___mit_8ino_a4dbf2273f0cb16f189e77bae1c0f1d4f}} 
+volatile uint16\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a4dbf2273f0cb16f189e77bae1c0f1d4f}{dir\+E\+P\+R\+OM}}
+\begin{DoxyCompactList}\small\item\em Direcció E\+E\+P\+R\+OM donde se guarda la dirección de la estructura \mbox{\hyperlink{struct_ciclos_e_p_r_o_m}{Ciclos\+E\+P\+R\+OM}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_ae6516611aa02016457c37acd273a5fed}\label{respi___esp___mit_8ino_ae6516611aa02016457c37acd273a5fed}} 
+\mbox{\hyperlink{struct_ciclos_e_p_r_o_m}{Ciclos\+E\+P\+R\+OM}} \mbox{\hyperlink{respi___esp___mit_8ino_ae6516611aa02016457c37acd273a5fed}{st\+\_\+\+Ciclos}}
+\begin{DoxyCompactList}\small\item\em Estructura que contiene la cantidad de ciclos y la cantidad de grabaciones en E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a9bb5f7bd8a387d4d030f8d22a5fcffde}{pim}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Presión inspiratoria máxima. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a67f2800c795eb2c0a99e83687028aaee}\label{respi___esp___mit_8ino_a67f2800c795eb2c0a99e83687028aaee}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a67f2800c795eb2c0a99e83687028aaee}{peep}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Presión positiva al final de la expiración (en desuso). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a56941156be101c56f8b45dc2fefe3f95}\label{respi___esp___mit_8ino_a56941156be101c56f8b45dc2fefe3f95}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a56941156be101c56f8b45dc2fefe3f95}{frec\+Resp}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Frecuencia respitatoria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a8c5b30a344fe5e0b25c8a03b2f895c15}\label{respi___esp___mit_8ino_a8c5b30a344fe5e0b25c8a03b2f895c15}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a8c5b30a344fe5e0b25c8a03b2f895c15}{ier}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Relación inspiración expiración. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_adaea53bd5a033222e0017ffc3a010fd2}\label{respi___esp___mit_8ino_adaea53bd5a033222e0017ffc3a010fd2}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_adaea53bd5a033222e0017ffc3a010fd2}{vt}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Volumen Tidal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_ab06f382cf87b77d3db718744d4574c68}\label{respi___esp___mit_8ino_ab06f382cf87b77d3db718744d4574c68}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_ab06f382cf87b77d3db718744d4574c68}{thr}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Umbral de detección de inspiración. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a21c1700a5b4f7caa63984a84173a11d8}\label{respi___esp___mit_8ino_a21c1700a5b4f7caa63984a84173a11d8}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a21c1700a5b4f7caa63984a84173a11d8}{pause}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Pausa respiratoria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_aa6e746d765c3211687c754aaeadd372e}\label{respi___esp___mit_8ino_aa6e746d765c3211687c754aaeadd372e}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_aa6e746d765c3211687c754aaeadd372e}{encend}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Encendido-\/\+Apagado de respirador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{respi___esp___mit_8ino_a92d5675224d66d467c8b8993b0597038}\label{respi___esp___mit_8ino_a92d5675224d66d467c8b8993b0597038}} 
+uint8\+\_\+t \mbox{\hyperlink{respi___esp___mit_8ino_a92d5675224d66d467c8b8993b0597038}{tins}}
+\begin{DoxyCompactList}\small\item\em Variable de configuración de Tiempo de inspiración. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\begin{DoxyAuthor}{Autor}
+H\+O\+M\+T\+EC Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versión}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+2020-\/08-\/26
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+P\+Lv3 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{respi___esp___mit_8ino_a11debc633c690ca19cb27df5f971d73d}\label{respi___esp___mit_8ino_a11debc633c690ca19cb27df5f971d73d}} 
+\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}!loop@{loop}}
+\index{loop@{loop}!respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función de bocle principal del microcontrolador. 
+
+A través de valores temporizado de menor prioridad que los timers, realiza actualización grafica y de valores medidos a la interfaz cada 100ms. Además cada 10 minutos actualiza los ciclos de la maquina. 
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{respi___esp___mit_8ino_ae6fa3f83b01439ad5e3ce3c898757962}\label{respi___esp___mit_8ino_ae6fa3f83b01439ad5e3ce3c898757962}} 
+\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}!readIncomingMsg@{readIncomingMsg}}
+\index{readIncomingMsg@{readIncomingMsg}!respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+\doxysubsubsection{\texorpdfstring{readIncomingMsg()}{readIncomingMsg()}}
+{\footnotesize\ttfamily void read\+Incoming\+Msg (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Esta función es la encargada de implementar el protocolo de comunicación con la interfaz gráfica. 
+
+Permite configurar valores tipicos en los procesos respiratorio y realiza una retransmisión de hacia la interfaz como chequeo de parámetros. Formato\+: \char`\"{}\+C\+O\+N\+F\+I\+G \%d \%d \%d \%d \%d \%d \%d \%d \%d\#\char`\"{} 
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+Gráfico de llamadas para esta función\+:
+% FIG 1
+\mbox{\Hypertarget{respi___esp___mit_8ino_a1d04139db3a5ad5713ecbd14d97da879}\label{respi___esp___mit_8ino_a1d04139db3a5ad5713ecbd14d97da879}} 
+\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}!setup@{setup}}
+\index{setup@{setup}!respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función de inicio principal del microcontrolador. 
+
+Configura\+: los baudios de los dos puertos series de comnunicación, pines digitales de entreda-\/salida, inicializa sensores, P\+ID (obsoleto), la máquina de estado \mbox{\hyperlink{class_mech_ventilation}{Mech\+Ventilation}} y sus opciones. Maneja valores grabados en E\+E\+P\+R\+OM y determina el inicio normal con calibración y valores por defectos, o el inicio rápido de emergencia con valores previos seteados. Actualiza valores para la interfaz. Configura temporizadores a 40us y 20ms para el motor paso a paso y para la maquina de estado, respectivamente. 
+\begin{DoxyParams}{Parámetros}
+{\em ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ninguno 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{respi___esp___mit_8ino_a9bb5f7bd8a387d4d030f8d22a5fcffde}\label{respi___esp___mit_8ino_a9bb5f7bd8a387d4d030f8d22a5fcffde}} 
+\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}!pim@{pim}}
+\index{pim@{pim}!respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+\doxysubsubsection{\texorpdfstring{pim}{pim}}
+{\footnotesize\ttfamily uint8\+\_\+t pim}
+
+
+
+Variable de configuración de Presión inspiratoria máxima. 
+
+Read commands \mbox{\Hypertarget{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}\label{respi___esp___mit_8ino_af84f125fad367d83677f5e999147dfb1}} 
+\index{respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}!stepper@{stepper}}
+\index{stepper@{stepper}!respi\_Esp\_Mit.ino@{respi\_Esp\_Mit.ino}}
+\doxysubsubsection{\texorpdfstring{stepper}{stepper}}
+{\footnotesize\ttfamily Flexy\+Stepper $\ast$ stepper = new Flexy\+Stepper()}
+
+
+
+Puntero a clase que maneja motor paso a paso. 
+
+Dependencies 

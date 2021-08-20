@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Homtec 1.0: Fichero Fuente calc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Homtec 1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('calc_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">calc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calc_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef CALC_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define CALC_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defaults_8h.html">defaults.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;avr/wdt.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//#include &lt;math.h&gt;// o &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calc_8h.html#a731804a9de0d750ca4f3ebe75d268373">estimateTidalVolume</a>(<span class="keywordtype">int</span> estatura, <span class="keywordtype">int</span> sexo);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="calc_8h.html#a458c3e10a6172ecae7ab517bec2dab6c">QuickSelectMedian</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> arr[], uint8_t n);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calc_8h.html#af641246d44249a8d06ab9783e219231b">refreshWatchDogTimer</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // CALC_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="adefaults_8h_html"><div class="ttname"><a href="defaults_8h.html">defaults.h</a></div></div>
+<div class="ttc" id="acalc_8cpp_html_ab669cf6818ac3cfabbb47c9d0a2dc2e9"><div class="ttname"><a href="calc_8cpp.html#ab669cf6818ac3cfabbb47c9d0a2dc2e9">QuickSelectMedian</a></div><div class="ttdeci">unsigned int QuickSelectMedian(unsigned int arr[], uint8_t n)</div><div class="ttdoc">filtro de media movil.</div><div class="ttdef"><b>Definition:</b> calc.cpp:24</div></div>
+<div class="ttc" id="acalc_8h_html_af641246d44249a8d06ab9783e219231b"><div class="ttname"><a href="calc_8h.html#af641246d44249a8d06ab9783e219231b">refreshWatchDogTimer</a></div><div class="ttdeci">void refreshWatchDogTimer()</div><div class="ttdoc">Refresca el WDT (Watch Dog Timer)</div><div class="ttdef"><b>Definition:</b> calc.cpp:73</div></div>
+<div class="ttc" id="acalc_8h_html_a458c3e10a6172ecae7ab517bec2dab6c"><div class="ttname"><a href="calc_8h.html#a458c3e10a6172ecae7ab517bec2dab6c">QuickSelectMedian</a></div><div class="ttdeci">unsigned int QuickSelectMedian(unsigned int arr[], uint8_t n)</div><div class="ttdoc">filtro de media movil.</div><div class="ttdef"><b>Definition:</b> calc.cpp:24</div></div>
+<div class="ttc" id="acalc_8h_html"><div class="ttname"><a href="calc_8h.html">calc.h</a></div></div>
+<div class="ttc" id="acalc_8cpp_html_af641246d44249a8d06ab9783e219231b"><div class="ttname"><a href="calc_8cpp.html#af641246d44249a8d06ab9783e219231b">refreshWatchDogTimer</a></div><div class="ttdeci">void refreshWatchDogTimer()</div><div class="ttdoc">Refresca el WDT (Watch Dog Timer)</div><div class="ttdef"><b>Definition:</b> calc.cpp:73</div></div>
+<div class="ttc" id="adefaults_8h_html_a569ed57a3b086b32967240e65ad4c437"><div class="ttname"><a href="defaults_8h.html#a569ed57a3b086b32967240e65ad4c437">DEFAULT_ML_PER_KG_IDEAL_WEIGHT</a></div><div class="ttdeci">#define DEFAULT_ML_PER_KG_IDEAL_WEIGHT</div><div class="ttdoc">Cantidad de mililitros de aire por Kg, se considera el peso ideal.</div><div class="ttdef"><b>Definition:</b> defaults.h:476</div></div>
+<div class="ttc" id="acalc_8cpp_html_a731804a9de0d750ca4f3ebe75d268373"><div class="ttname"><a href="calc_8cpp.html#a731804a9de0d750ca4f3ebe75d268373">estimateTidalVolume</a></div><div class="ttdeci">int estimateTidalVolume(int estatura, int sexo)</div><div class="ttdoc">estima el volumen tidal en función de estatura y sexo, en ml.</div><div class="ttdef"><b>Definition:</b> calc.cpp:10</div></div>
+<div class="ttc" id="acalc_8h_html_a731804a9de0d750ca4f3ebe75d268373"><div class="ttname"><a href="calc_8h.html#a731804a9de0d750ca4f3ebe75d268373">estimateTidalVolume</a></div><div class="ttdeci">int estimateTidalVolume(int estatura, int sexo)</div><div class="ttdoc">estima el volumen tidal en función de estatura y sexo, en ml.</div><div class="ttdef"><b>Definition:</b> calc.cpp:10</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="calc_8h.html">calc.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+digraph "MPX_PRESSURE_SENSOR::autoajuste"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MPX_PRESSURE_SENSOR\l::autoajuste",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Función de autoajuste para sensor de presion MPX."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MPX_PRESSURE_SENSOR\l::MPX_CONVERT_cmH20",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#afb3ab90f770b5538000092109dd611d0",tooltip="Realiza conversion del valor de presión en KPa a cmH20."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MPX_PRESSURE_SENSOR\l::MPX_CONVERT_PRESSURE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#a9150be89dadb24b20e1920bcd6df98e1",tooltip="Realiza conversion a KPa desde la tension leida previemente."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MPX_PRESSURE_SENSOR\l::MPX_READ_PRESSURE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_p_x___p_r_e_s_s_u_r_e___s_e_n_s_o_r.html#ae88d21e15184217dfbe206e667c3bb04",tooltip="Realiza la lectura de presión analogica."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="QuickSelectMedian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calc_8cpp.html#ab669cf6818ac3cfabbb47c9d0a2dc2e9",tooltip="filtro de media movil."];
+}

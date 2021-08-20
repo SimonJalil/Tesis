@@ -1,0 +1,266 @@
+\begin{theindex}
+
+  \item {$\sim$MPX\_PRESSURE\_SENSOR}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{11}
+
+  \indexspace
+
+  \item {activateRecruitment}
+    \subitem {MechVentilation}, \hyperpage{8}
+  \item {Alarm\_breathe\_DIS}
+    \subitem {defaults.h}, \hyperpage{33}
+  \item {Alarm\_desconected\_DIS}
+    \subitem {defaults.h}, \hyperpage{33}
+  \item {Alarm\_No\_Flux\_DIS}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {Alarm\_No\_Flux\_EN}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {Alarm\_Overpressure\_DIS}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {autoajuste}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{12}
+
+  \indexspace
+
+  \item {begin}
+    \subitem {Sensors}, \hyperpage{18}
+
+  \indexspace
+
+  \item {calc.cpp}, \hyperpage{27}
+    \subitem {estimateTidalVolume}, \hyperpage{27}
+    \subitem {QuickSelectMedian}, \hyperpage{28}
+    \subitem {refreshWatchDogTimer}, \hyperpage{28}
+  \item {calc.h}, \hyperpage{28}
+    \subitem {estimateTidalVolume}, \hyperpage{29}
+    \subitem {QuickSelectMedian}, \hyperpage{29}
+    \subitem {refreshWatchDogTimer}, \hyperpage{30}
+  \item {CiclosEPROM}, \hyperpage{5}
+  \item {COEFFS}, \hyperpage{5}
+  \item {Configuration\_t}, \hyperpage{6}
+
+  \indexspace
+
+  \item {DEFAULT\_BYARRAY\_VOLTILDAL}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {DEFAULT\_PA\_TO\_CM\_H2O}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {DEFAULT\_TINS}
+    \subitem {defaults.h}, \hyperpage{34}
+  \item {defaults.h}, \hyperpage{30}
+    \subitem {Alarm\_breathe\_DIS}, \hyperpage{33}
+    \subitem {Alarm\_desconected\_DIS}, \hyperpage{33}
+    \subitem {Alarm\_No\_Flux\_DIS}, \hyperpage{34}
+    \subitem {Alarm\_No\_Flux\_EN}, \hyperpage{34}
+    \subitem {Alarm\_Overpressure\_DIS}, \hyperpage{34}
+    \subitem {DEFAULT\_BYARRAY\_VOLTILDAL}, \hyperpage{34}
+    \subitem {DEFAULT\_PA\_TO\_CM\_H2O}, \hyperpage{34}
+    \subitem {DEFAULT\_TINS}, \hyperpage{34}
+    \subitem {No\_Alarm}, \hyperpage{35}
+    \subitem {PIN\_MPX\_DATA}, \hyperpage{35}
+    \subitem {PIN\_MPX\_FLOW}, \hyperpage{35}
+    \subitem {SOLENOID\_CLOSED}, \hyperpage{35}
+    \subitem {STEPPER\_HIGHEST\_POSITION}, \hyperpage{35}
+    \subitem {STEPPER\_LOWEST\_POSITION}, \hyperpage{35}
+    \subitem {STEPPER\_MICROSTEPS}, \hyperpage{36}
+    \subitem {STEPPER\_PEEP\_SOLENOID\_HYSTERESIS}, \hyperpage{36}
+
+  \indexspace
+
+  \item {estimateTidalVolume}
+    \subitem {calc.cpp}, \hyperpage{27}
+    \subitem {calc.h}, \hyperpage{29}
+  \item {evaluatePressure}
+    \subitem {MechVentilation}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getAbsolutePressureInCmH2O}
+    \subitem {Sensors}, \hyperpage{18}
+  \item {getAbsolutePressureInPascals}
+    \subitem {Sensors}, \hyperpage{18}
+  \item {getAlarms}
+    \subitem {MechVentilation}, \hyperpage{8}
+  \item {getFlow}
+    \subitem {Sensors}, \hyperpage{19}
+  \item {getInsuflationTimeApp}
+    \subitem {MechVentilation}, \hyperpage{9}
+  \item {getLastPressure}
+    \subitem {Sensors}, \hyperpage{19}
+  \item {getOffsetValue}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{13}
+  \item {getRelativePressureInCmH2O}
+    \subitem {Sensors}, \hyperpage{19}
+  \item {getVolume}
+    \subitem {Sensors}, \hyperpage{21}
+  \item {getVolumeActual}
+    \subitem {Sensors}, \hyperpage{21}
+
+  \indexspace
+
+  \item {HOLD\_IN\_DURATION}
+    \subitem {MechVentilation.h}, \hyperpage{38}
+
+  \indexspace
+
+  \item {loop}
+    \subitem {respi\_Esp\_Mit.ino}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Mech}, \hyperpage{6}
+  \item {MechVentilation}, \hyperpage{7}
+    \subitem {activateRecruitment}, \hyperpage{8}
+    \subitem {evaluatePressure}, \hyperpage{8}
+    \subitem {getAlarms}, \hyperpage{8}
+    \subitem {getInsuflationTimeApp}, \hyperpage{9}
+    \subitem {MechVentilation}, \hyperpage{8}
+    \subitem {setAlarms}, \hyperpage{9}
+    \subitem {setInsuflationTime}, \hyperpage{9}
+    \subitem {start}, \hyperpage{9}
+    \subitem {stopMech}, \hyperpage{10}
+    \subitem {update}, \hyperpage{10}
+  \item {MechVentilation.cpp}, \hyperpage{36}
+  \item {MechVentilation.h}, \hyperpage{37}
+    \subitem {HOLD\_IN\_DURATION}, \hyperpage{38}
+    \subitem {State}, \hyperpage{37}
+    \subitem {State\_Exsufflation}, \hyperpage{38}
+    \subitem {State\_Insufflation}, \hyperpage{38}
+    \subitem {VoluTidal}, \hyperpage{38}
+  \item {mpx.cpp}, \hyperpage{38}
+  \item {mpx.h}, \hyperpage{39}
+  \item {MPX\_CONVERT\_cmH20}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{13}
+  \item {MPX\_CONVERT\_PRESSURE}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{13}
+  \item {MPX\_PRESSURE\_SENSOR}, \hyperpage{10}
+    \subitem {$\sim$MPX\_PRESSURE\_SENSOR}, \hyperpage{11}
+    \subitem {autoajuste}, \hyperpage{12}
+    \subitem {getOffsetValue}, \hyperpage{13}
+    \subitem {MPX\_CONVERT\_cmH20}, \hyperpage{13}
+    \subitem {MPX\_CONVERT\_PRESSURE}, \hyperpage{13}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{11}
+    \subitem {MPX\_READ\_PRESSURE}, \hyperpage{14}
+    \subitem {MPX\_SET\_ADC}, \hyperpage{14}
+    \subitem {setOffsetValue}, \hyperpage{14}
+  \item {MPX\_READ\_PRESSURE}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{14}
+  \item {MPX\_SET\_ADC}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{14}
+
+  \indexspace
+
+  \item {No\_Alarm}
+    \subitem {defaults.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {pim}
+    \subitem {respi\_Esp\_Mit.ino}, \hyperpage{42}
+  \item {PIN\_MPX\_DATA}
+    \subitem {defaults.h}, \hyperpage{35}
+  \item {PIN\_MPX\_FLOW}
+    \subitem {defaults.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {QuickSelectMedian}
+    \subitem {calc.cpp}, \hyperpage{28}
+    \subitem {calc.h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {readIncomingMsg}
+    \subitem {respi\_Esp\_Mit.ino}, \hyperpage{41}
+  \item {readPressure}
+    \subitem {Sensors}, \hyperpage{21}
+  \item {readVolume}
+    \subitem {Sensors}, \hyperpage{22}
+  \item {rebootVolumeSensor}
+    \subitem {Sensors}, \hyperpage{22}
+  \item {refreshWatchDogTimer}
+    \subitem {calc.cpp}, \hyperpage{28}
+    \subitem {calc.h}, \hyperpage{30}
+  \item {resetPressures}
+    \subitem {Sensors}, \hyperpage{23}
+  \item {respi\_Esp\_Mit.ino}, \hyperpage{39}
+    \subitem {loop}, \hyperpage{41}
+    \subitem {pim}, \hyperpage{42}
+    \subitem {readIncomingMsg}, \hyperpage{41}
+    \subitem {setup}, \hyperpage{41}
+    \subitem {stepper}, \hyperpage{42}
+  \item {rutinaDeAutoajuste}
+    \subitem {Sensors}, \hyperpage{23}
+
+  \indexspace
+
+  \item {saveVolume}
+    \subitem {Sensors}, \hyperpage{23}
+  \item {Sensores}, \hyperpage{15}
+  \item {SensorLastPressure\_t}, \hyperpage{15}
+  \item {SensorPressureValues\_t}, \hyperpage{16}
+  \item {Sensors}, \hyperpage{16}
+    \subitem {begin}, \hyperpage{18}
+    \subitem {getAbsolutePressureInCmH2O}, \hyperpage{18}
+    \subitem {getAbsolutePressureInPascals}, \hyperpage{18}
+    \subitem {getFlow}, \hyperpage{19}
+    \subitem {getLastPressure}, \hyperpage{19}
+    \subitem {getRelativePressureInCmH2O}, \hyperpage{19}
+    \subitem {getVolume}, \hyperpage{21}
+    \subitem {getVolumeActual}, \hyperpage{21}
+    \subitem {readPressure}, \hyperpage{21}
+    \subitem {readVolume}, \hyperpage{22}
+    \subitem {rebootVolumeSensor}, \hyperpage{22}
+    \subitem {resetPressures}, \hyperpage{23}
+    \subitem {rutinaDeAutoajuste}, \hyperpage{23}
+    \subitem {saveVolume}, \hyperpage{23}
+    \subitem {Sensors}, \hyperpage{17}
+    \subitem {stalledVolumeSensor}, \hyperpage{24}
+  \item {Sensors.cpp}, \hyperpage{42}
+  \item {Sensors.h}, \hyperpage{43}
+  \item {SensorVolumeValue\_t}, \hyperpage{24}
+  \item {setAlarms}
+    \subitem {MechVentilation}, \hyperpage{9}
+  \item {setInsuflationTime}
+    \subitem {MechVentilation}, \hyperpage{9}
+  \item {setOffsetValue}
+    \subitem {MPX\_PRESSURE\_SENSOR}, \hyperpage{14}
+  \item {setup}
+    \subitem {respi\_Esp\_Mit.ino}, \hyperpage{41}
+  \item {SOLENOID\_CLOSED}
+    \subitem {defaults.h}, \hyperpage{35}
+  \item {stalledVolumeSensor}
+    \subitem {Sensors}, \hyperpage{24}
+  \item {start}
+    \subitem {MechVentilation}, \hyperpage{9}
+  \item {State}
+    \subitem {MechVentilation.h}, \hyperpage{37}
+  \item {State\_Exsufflation}
+    \subitem {MechVentilation.h}, \hyperpage{38}
+  \item {State\_Insufflation}
+    \subitem {MechVentilation.h}, \hyperpage{38}
+  \item {stepper}
+    \subitem {respi\_Esp\_Mit.ino}, \hyperpage{42}
+  \item {STEPPER\_HIGHEST\_POSITION}
+    \subitem {defaults.h}, \hyperpage{35}
+  \item {STEPPER\_LOWEST\_POSITION}
+    \subitem {defaults.h}, \hyperpage{35}
+  \item {STEPPER\_MICROSTEPS}
+    \subitem {defaults.h}, \hyperpage{36}
+  \item {STEPPER\_PEEP\_SOLENOID\_HYSTERESIS}
+    \subitem {defaults.h}, \hyperpage{36}
+  \item {stopMech}
+    \subitem {MechVentilation}, \hyperpage{10}
+
+  \indexspace
+
+  \item {update}
+    \subitem {MechVentilation}, \hyperpage{10}
+
+  \indexspace
+
+  \item {VentilationOptions\_t}, \hyperpage{25}
+  \item {VoluTidal}
+    \subitem {MechVentilation.h}, \hyperpage{38}
+
+\end{theindex}

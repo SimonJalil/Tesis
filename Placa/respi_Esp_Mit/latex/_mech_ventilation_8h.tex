@@ -1,0 +1,113 @@
+\hypertarget{_mech_ventilation_8h}{}\doxysection{Referencia del Archivo Mech\+Ventilation.\+h}
+\label{_mech_ventilation_8h}\index{MechVentilation.h@{MechVentilation.h}}
+{\ttfamily \#include \char`\"{}mpx.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}defaults.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Auto\+P\+I\+D/\+Auto\+P\+I\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/\+Flexy\+Stepper/\+Flexy\+Stepper.\+h\char`\"{}}\newline
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_configuration__t}{Configuration\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Estructura de configuración. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mech_ventilation}{Mech\+Ventilation}}
+\begin{DoxyCompactList}\small\item\em Clase \char`\"{}mech Ventilation\char`\"{}. Contiene las variables y definiciones de los métodos para controlar la ventilación mecánica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} \{ \newline
+{\bfseries Init\+\_\+\+Insufflation} = 1, 
+\mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716}{State\+\_\+\+Insufflation}} = 2, 
+{\bfseries Init\+\_\+\+Exsufflation} = 3, 
+\mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8}{State\+\_\+\+Exsufflation}} = 4, 
+\newline
+{\bfseries State\+\_\+\+Hold\+\_\+\+In} = 5, 
+{\bfseries State\+\_\+\+Error\+\_\+\+Pas} = 6, 
+{\bfseries State\+\_\+\+Stand\+By} = 7, 
+{\bfseries State\+\_\+\+Homing} = 0, 
+\newline
+{\bfseries State\+\_\+\+Error} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em Enumneración de los estados de la máquina de estados utilizada para el control de la ventilación mecánica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{_mech_ventilation_8h_a01a11232a560a1fc8b1bfe9cd6b9dabc}{H\+O\+L\+D\+\_\+\+I\+N\+\_\+\+D\+U\+R\+A\+T\+I\+ON}} = 30.\+0
+\begin{DoxyCompactList}\small\item\em Seteos para la temporización. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_mech_ventilation_8h_a07648040cd7a3c263ca0a7874554f7ed}\label{_mech_ventilation_8h_a07648040cd7a3c263ca0a7874554f7ed}} 
+const float \mbox{\hyperlink{_mech_ventilation_8h_a07648040cd7a3c263ca0a7874554f7ed}{M\+I\+N\+\_\+\+P\+E\+E\+P\+\_\+\+P\+A\+U\+SE}} =50.\+0
+\begin{DoxyCompactList}\small\item\em Duracion en ms de la pausa luego de la exsuflación. Durante este tiempo se espera por una posible reacción del paciente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_mech_ventilation_8h_a3d45b8e24000b01d19135f584df6a2e3}\label{_mech_ventilation_8h_a3d45b8e24000b01d19135f584df6a2e3}} 
+const float \mbox{\hyperlink{_mech_ventilation_8h_a3d45b8e24000b01d19135f584df6a2e3}{M\+A\+X\+\_\+\+E\+X\+\_\+\+D\+U\+R\+A\+T\+I\+ON}} = 1000.\+0
+\begin{DoxyCompactList}\small\item\em duración máxima de exalación en ms \end{DoxyCompactList}\item 
+const uint8\+\_\+t \mbox{\hyperlink{_mech_ventilation_8h_a9beb837cd5e9aa27355a4a277dde3de1}{Volu\+Tidal}} \mbox{[}20\mbox{]}
+\begin{DoxyCompactList}\small\item\em Arreglo donde se guarda el volumen tidal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Ventilación mecánica
+
+Este archivo contiene las declaraciones de los métodos para controlar la ventilación mecánica a través de todos sus componentes. 
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}\label{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}} 
+\index{MechVentilation.h@{MechVentilation.h}!State@{State}}
+\index{State@{State}!MechVentilation.h@{MechVentilation.h}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}}
+
+
+
+Enumneración de los estados de la máquina de estados utilizada para el control de la ventilación mecánica. 
+
+Init\+\_\+\+Insufflation Comienza la insuflación State\+\_\+\+Insufflation Se insufla durante todo el tiempo de inspiración Init\+\_\+\+Exsufflation Comienza la exuflación ~\newline
+ State\+\_\+\+Exsufflation Comienza la exsuflación State\+\_\+\+Hold\+\_\+\+In Tiempo de esperaantes de la exsuflación ~\newline
+ State\+\_\+\+Error\+\_\+\+Pas Estado de error ~\newline
+ State\+\_\+\+Stand\+By Estado de espera. Respirador apagado State\+\_\+\+Homing Estado donde se realiza lacalibración del cero del motor paso a paso State\+\_\+\+Error Estado de error ~\newline
+
+
+Seteos para la temporización \begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{State\_Insufflation@{State\_Insufflation}!MechVentilation.h@{MechVentilation.h}}\index{MechVentilation.h@{MechVentilation.h}!State\_Insufflation@{State\_Insufflation}}}\mbox{\Hypertarget{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716}\label{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae114621ed8d8d5c43cf278d1f4034716}} 
+State\+\_\+\+Insufflation&Insufflating (P\+ID control). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{State\_Exsufflation@{State\_Exsufflation}!MechVentilation.h@{MechVentilation.h}}\index{MechVentilation.h@{MechVentilation.h}!State\_Exsufflation@{State\_Exsufflation}}}\mbox{\Hypertarget{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8}\label{_mech_ventilation_8h_a5d74787dedbc4e11c1ab15bf487e61f8a21771e21567f98fd56a0b8cb03c985a8}} 
+State\+\_\+\+Exsufflation&Return to position 0 and wait for the patient to exsufflate. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{_mech_ventilation_8h_a01a11232a560a1fc8b1bfe9cd6b9dabc}\label{_mech_ventilation_8h_a01a11232a560a1fc8b1bfe9cd6b9dabc}} 
+\index{MechVentilation.h@{MechVentilation.h}!HOLD\_IN\_DURATION@{HOLD\_IN\_DURATION}}
+\index{HOLD\_IN\_DURATION@{HOLD\_IN\_DURATION}!MechVentilation.h@{MechVentilation.h}}
+\doxysubsubsection{\texorpdfstring{HOLD\_IN\_DURATION}{HOLD\_IN\_DURATION}}
+{\footnotesize\ttfamily H\+O\+L\+D\+\_\+\+I\+N\+\_\+\+D\+U\+R\+A\+T\+I\+ON = 30.\+0}
+
+
+
+Seteos para la temporización. 
+
+Duracionde la pausa en ms luego de la insuflación. \mbox{\Hypertarget{_mech_ventilation_8h_a9beb837cd5e9aa27355a4a277dde3de1}\label{_mech_ventilation_8h_a9beb837cd5e9aa27355a4a277dde3de1}} 
+\index{MechVentilation.h@{MechVentilation.h}!VoluTidal@{VoluTidal}}
+\index{VoluTidal@{VoluTidal}!MechVentilation.h@{MechVentilation.h}}
+\doxysubsubsection{\texorpdfstring{VoluTidal}{VoluTidal}}
+{\footnotesize\ttfamily Volu\+Tidal}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{91, 96, 101, 105,  }
+\DoxyCodeLine{                               110, 115, 119, 124,}
+\DoxyCodeLine{                               129, 133, 138, 143,}
+\DoxyCodeLine{                               148, 153, 158, 163,}
+\DoxyCodeLine{                               168, 173, 178, 186\}}
+
+\end{DoxyCode}
+
+
+Arreglo donde se guarda el volumen tidal. 
+

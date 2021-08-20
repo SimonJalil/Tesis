@@ -1,0 +1,35 @@
+digraph "defaults.h"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="defaults.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="calc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calc_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="calc.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$calc_8cpp.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="MechVentilation.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_mech_ventilation_8h.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="MechVentilation.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_mech_ventilation_8cpp.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="respi_Esp_Mit.ino",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$respi___esp___mit_8ino.html",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="mpx.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpx_8cpp.html",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="mpx.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpx_8h.html",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Sensors.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sensors_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Sensors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sensors_8h.html",tooltip=" "];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}
