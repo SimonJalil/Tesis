@@ -1,0 +1,8 @@
+Carlos en esta carpeta te dejo el archivo esquematico del datasheet en el cual nos basamos.
+En la pagina 26  del pdf se encuentra el esquematico de alimentacion USB (figura 22). 
+Basicamente nuestro problema en la placa anterior es que invertimos los pines D+ con D- del USB, y es por eso que no estableciamos comunicacion por parte del
+sensorTile. Ademas agregamos un boton de reset a la placa que nos gustaria lo revises, este tambien esta en el datasheet del dispositivo. 
+Por ultimo los esquemas se encuentran en la carpeta del proyecto "Placa/Extension Board", lo podes abrir desde kicad, o en esta misma carpeta
+hay otro fichero "pdf" el cual se encuentra ploteado el esquematico en este formato.  
+ 
+
