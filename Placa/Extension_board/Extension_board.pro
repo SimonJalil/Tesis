@@ -1,4 +1,4 @@
-update=mar 15 jun 2021 21:54:58
+update=vie 20 ago 2021 10:17:50
 version=1
 last_client=kicad
 [general]
@@ -250,7 +250,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/home/simon/Documentos/FACULTAD_linux/Microcontroladores/Tesis/Placa/Extension_board/
+PlotDirectoryName=pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
