@@ -1,12 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "procesamiento.h"
-#include "qcustomplot.h"
+
 
 const int VENDOR_ID = 1155;
 const int PRODUCT_ID = 14155;
 
 Cdato rx_buff;
+QTextStream txt_buff;
+QFile arch;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,6 +28,26 @@ MainWindow::MainWindow(QWidget *parent)
                 if(serial_Info.productIdentifier() == PRODUCT_ID){
                     portname = serial_Info.portName();
                     stm32_available = true;
+
+                    QString buffer = QString("c");
+
+                    if(serial->isWritable()){
+                        serial->write(buffer.toStdString().c_str(), buffer.size());
+                        qDebug() << "Primer Stop...";
+                        graficar = 0;
+                    }
+
+                    arch.setFileName("/home/simon/Documentos/FACULTAD_linux/Microcontroladores/Tesis/Qt/COM_port/texto.txt");
+
+                    if(arch.exists())
+                        arch.remove();
+
+                    arch.open(QIODevice::ReadWrite | QIODevice::Text);
+                    if(!arch.isOpen()){
+                        qDebug() << "Error: archivo no abierto";
+                        while(1);
+                    }
+                    txt_buff.setDevice(&arch);
                 }
             }
         }
@@ -93,16 +115,12 @@ void MainWindow::segmentar(QString dato){
     rx_buff.calculoMod(GIROSCOPO);
     rx_buff.calculoMod(ACELEROMETRO);
 
-
-
 //    qDebug() << val[0];
 //    qDebug() << val[1];
 //    qDebug() << val[2];
 //    qDebug() << val[3];
 //    qDebug() << val[4];
 //    qDebug() << val[5];
-
-
 
     qDebug() << "Modulo giroscopo: " << rx_buff.getMod(GIROSCOPO);
     qDebug() << "Modulo acelerometro: " << rx_buff.getMod(ACELEROMETRO);
@@ -208,6 +226,12 @@ void MainWindow::serial_read()
         QByteArray data = serial->readLine();
         QString myString(data);
         qDebug() << myString;
+        if(graficar == 1)
+            txt_buff << myString;
+        else{
+            arch.flush();
+            arch.close();
+        }
 
         segmentar(myString);
     }

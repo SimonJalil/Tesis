@@ -1,14 +1,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-
-
 #include <QMainWindow>
 #include <qserialport.h>
 #include <qserialportinfo.h>
 #include <qdebug.h>
 #include <QTimer>
 #include "qcustomplot.h"
+#include <qtextstream.h>
+#include <qfile.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
