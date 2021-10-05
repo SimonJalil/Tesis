@@ -22,7 +22,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void setupRealtimeData(QCustomPlot *customPlot);
+    void setupRealtimeData(QCustomPlot *customPlot, QCustomPlot *customPlot_2);
+
 private slots:
     void on_pushButton_clicked();
 
@@ -33,6 +34,8 @@ private slots:
     //void makePlot();
 
     void realtimeDataSlot();
+
+    void quitMyApp();
 
 private:
     Ui::MainWindow *ui;

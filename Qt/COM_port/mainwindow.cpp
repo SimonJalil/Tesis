@@ -4,7 +4,12 @@
 
 
 const int VENDOR_ID = 1155;
-const int PRODUCT_ID = 14155;
+
+//const int PRODUCT_ID = 14155;
+/*SENSORTILE*/
+const int PRODUCT_ID = 22336;
+
+QString directorio = "/home/simon/Documentos/FACULTAD_linux/Microcontroladores/Tesis/Qt/COM_port/Sesiones/sesion";
 
 Cdato rx_buff;
 QTextStream txt_buff;
@@ -28,26 +33,6 @@ MainWindow::MainWindow(QWidget *parent)
                 if(serial_Info.productIdentifier() == PRODUCT_ID){
                     portname = serial_Info.portName();
                     stm32_available = true;
-
-                    QString buffer = QString("c");
-
-                    if(serial->isWritable()){
-                        serial->write(buffer.toStdString().c_str(), buffer.size());
-                        qDebug() << "Primer Stop...";
-                        graficar = 0;
-                    }
-
-                    arch.setFileName("/home/simon/Documentos/FACULTAD_linux/Microcontroladores/Tesis/Qt/COM_port/texto.txt");
-
-                    if(arch.exists())
-                        arch.remove();
-
-                    arch.open(QIODevice::ReadWrite | QIODevice::Text);
-                    if(!arch.isOpen()){
-                        qDebug() << "Error: archivo no abierto";
-                        while(1);
-                    }
-                    txt_buff.setDevice(&arch);
                 }
             }
         }
@@ -62,8 +47,17 @@ MainWindow::MainWindow(QWidget *parent)
     }
     if(stm32_available){
         stm32_init();
-        //makePlot();
-        setupRealtimeData(ui->customPlot);
+
+        QString buffer = QString("c");
+
+        if(serial->isWritable()){
+            serial->write(buffer.toStdString().c_str(), buffer.size());
+            qDebug() << "Primer Stop...";
+            graficar = 0;
+        }
+
+        setupRealtimeData(ui->customPlot, ui->customPlot_2);
+
     }
     else
         qDebug() << "Error";
@@ -85,6 +79,7 @@ void MainWindow::stm32_init()
     serial->setFlowControl(QSerialPort::NoFlowControl);
     serial->open(QIODevice::ReadWrite);
     connect(serial,SIGNAL(readyRead()),this,SLOT(serial_read()));
+    connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
 }
 
 void MainWindow::segmentar(QString dato){
@@ -104,23 +99,16 @@ void MainWindow::segmentar(QString dato){
         indice = dato.indexOf(',');
     }
 
-    rx_buff.set(val[3], GIROSCOPO, EJE_X);
-    rx_buff.set(val[4], GIROSCOPO, EJE_Y);
-    rx_buff.set(val[5], GIROSCOPO, EJE_Z);
-
     rx_buff.set(val[0], ACELEROMETRO, EJE_X);
     rx_buff.set(val[1], ACELEROMETRO, EJE_Y);
     rx_buff.set(val[2], ACELEROMETRO, EJE_Z);
 
+    rx_buff.set(val[3], GIROSCOPO, EJE_X);
+    rx_buff.set(val[4], GIROSCOPO, EJE_Y);
+    rx_buff.set(val[5], GIROSCOPO, EJE_Z);
+
     rx_buff.calculoMod(GIROSCOPO);
     rx_buff.calculoMod(ACELEROMETRO);
-
-//    qDebug() << val[0];
-//    qDebug() << val[1];
-//    qDebug() << val[2];
-//    qDebug() << val[3];
-//    qDebug() << val[4];
-//    qDebug() << val[5];
 
     qDebug() << "Modulo giroscopo: " << rx_buff.getMod(GIROSCOPO);
     qDebug() << "Modulo acelerometro: " << rx_buff.getMod(ACELEROMETRO);
@@ -138,43 +126,12 @@ void MainWindow::segmentar(QString dato){
 }
 
 
-/*void MainWindow::serial_read()
-{
-    if(serial->isWritable() && stm32_available){
-        QByteArray data = serial->readAll();
-        qDebug() << "Dato leido: " << data.toInt();
-        ui->lcdNumber->display(data.toInt());
-    }
-}
-*/
-
-/*
-void MainWindow::makePlot(){
-    // generate some data:
-    QVector<double> x(101), y(101); // initialize with entries 0..100
-    for (int i=0; i<101; ++i)
-    {
-      x[i] = i/50.0 - 1; // x goes from -1 to 1
-      y[i] = x[i]*x[i]; // let's plot a quadratic function
-    }
-    // create graph and assign data to it:
-    ui->customPlot->addGraph();
-    ui->customPlot->graph(0)->setData(x, y);
-    // give the axes some labels:
-    ui->customPlot->xAxis->setLabel("x");
-    ui->customPlot->yAxis->setLabel("y");
-    // set axes ranges, so we see all data:
-    ui->customPlot->xAxis->setRange(-1, 1);
-    ui->customPlot->yAxis->setRange(0, 1);
-    ui->customPlot->replot();
-}
-*/
-
-void MainWindow::setupRealtimeData(QCustomPlot *customPlot){
+void MainWindow::setupRealtimeData(QCustomPlot *customPlot, QCustomPlot *customPlot_2){
     customPlot->addGraph(); // Linea azul
     customPlot->graph(0)->setPen(QPen(QColor(40, 110, 255)));
-    customPlot->addGraph(); // Linea roja
-    customPlot->graph(1)->setPen(QPen(QColor(255, 110, 40)));
+
+    customPlot_2->addGraph(); // Linea roja
+    customPlot_2->graph(0)->setPen(QPen(QColor(255, 110, 40)));
 
     QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
     timeTicker->setTimeFormat("%h:%m:%s");
@@ -182,9 +139,16 @@ void MainWindow::setupRealtimeData(QCustomPlot *customPlot){
     customPlot->axisRect()->setupFullAxesBox();
     customPlot->yAxis->setRange(20.0, 300.0);
 
+    customPlot_2->xAxis->setTicker(timeTicker);
+    customPlot_2->axisRect()->setupFullAxesBox();
+    customPlot_2->yAxis->setRange(20.0, 300.0);
+
     // Hacer que los ejes izquierdo e inferior transfieran sus rangos a los ejes derecho y superior:
     connect(customPlot->xAxis, SIGNAL(rangeChanged(QCPRange)), customPlot->xAxis2, SLOT(setRange(QCPRange)));
     connect(customPlot->yAxis, SIGNAL(rangeChanged(QCPRange)), customPlot->yAxis2, SLOT(setRange(QCPRange)));
+
+    connect(customPlot_2->xAxis, SIGNAL(rangeChanged(QCPRange)), customPlot_2->xAxis2, SLOT(setRange(QCPRange)));
+    connect(customPlot_2->yAxis, SIGNAL(rangeChanged(QCPRange)), customPlot_2->yAxis2, SLOT(setRange(QCPRange)));
 
     // Establece un timer que de forma repetida llame a MainWindow::realtimeDataSlot:
     connect(&dataTimer, SIGNAL(timeout()), this, SLOT(realtimeDataSlot()));
@@ -196,8 +160,28 @@ void MainWindow::setupRealtimeData(QCustomPlot *customPlot){
 /***********************************************************************************************************************/
 void MainWindow::on_pushButton_clicked()
 {
+    static int cont = 0;
     //QString buffer = QString("ab\r");
     QString buffer = QString("a");
+
+    QString path = directorio;
+    path.append(QString::number(cont));
+    path.append("txt");
+
+    /*Creacion de archivo de texto*/
+    arch.setFileName(path);
+
+    if(arch.exists())
+        arch.remove();
+
+    cont++;
+
+    arch.open(QIODevice::ReadWrite | QIODevice::Text);
+    if(!arch.isOpen()){
+        qDebug() << "Error: archivo no abierto";
+        while(1);
+    }
+    txt_buff.setDevice(&arch);
 
     if(serial->isWritable()){
         serial->write(buffer.toStdString().c_str(), buffer.size());
@@ -211,6 +195,9 @@ void MainWindow::on_pushButton_2_clicked()
 {
     //QString buffer = QString("cd\r");
     QString buffer = QString("c");
+
+    arch.flush();
+    arch.close();
 
     if(serial->isWritable()){
         serial->write(buffer.toStdString().c_str(), buffer.size());
@@ -228,10 +215,6 @@ void MainWindow::serial_read()
         qDebug() << myString;
         if(graficar == 1)
             txt_buff << myString;
-        else{
-            arch.flush();
-            arch.close();
-        }
 
         segmentar(myString);
     }
@@ -250,19 +233,21 @@ void MainWindow::realtimeDataSlot(){
 //      ui->customPlot->graph(0)->addData(key, qSin(key)+qrand()/(double)RAND_MAX*1*qSin(key/0.3843));
 //      ui->customPlot->graph(1)->addData(key, qCos(key)+qrand()/(double)RAND_MAX*0.5*qSin(key/0.4364));
 
-
         ui->customPlot->graph(0)->addData(key, rx_buff.getMod(GIROSCOPO));
-        ui->customPlot->graph(1)->addData(key, rx_buff.getMod(ACELEROMETRO));
+        ui->customPlot_2->graph(0)->addData(key, rx_buff.getMod(ACELEROMETRO));
 
       // Reescala el valor del eje (vertical) para encajar con los correspondientes datos:
         ui->customPlot->graph(0)->rescaleValueAxis(false,true);
-        ui->customPlot->graph(1)->rescaleValueAxis(true,true);
+        ui->customPlot_2->graph(0)->rescaleValueAxis(false,true);
         lastPointKey = key;
     }
 
     // Hacer que el rango del eje se desplace con los datos (a un tamaño de rango constante de 8):
     ui->customPlot->xAxis->setRange(key, 8, Qt::AlignRight);
     ui->customPlot->replot();
+
+    ui->customPlot_2->xAxis->setRange(key, 8, Qt::AlignRight);
+    ui->customPlot_2->replot();
 
     // Calcula los frames por segundo
     static double lastFpsKey;
@@ -273,10 +258,38 @@ void MainWindow::realtimeDataSlot(){
       ui->statusbar->showMessage(
             QString("%1 FPS, Total Data points: %2")
             .arg(frameCount/(key-lastFpsKey), 0, 'f', 0)
-            .arg(ui->customPlot->graph(0)->data()->size()+ui->customPlot->graph(1)->data()->size())
+            .arg(ui->customPlot->graph(0)->data()->size())//+ui->customPlot->graph(1)->data()->size())
             , 0);
+
+      ui->statusbar->showMessage(
+            QString("%1 FPS, Total Data points: %2")
+            .arg(frameCount/(key-lastFpsKey), 0, 'f', 0)
+            .arg(ui->customPlot_2->graph(0)->data()->size())//+ui->customPlot->graph(1)->data()->size())
+            , 0);
+
+
       lastFpsKey = key;
       frameCount = 0;
     }
 }
 
+
+void MainWindow::quitMyApp(){
+    QString buffer = QString("c");
+
+    if(serial->isWritable()){
+        serial->write(buffer.toStdString().c_str(), buffer.size());
+        qDebug() << "Stop";
+        graficar = 0;
+    }
+
+
+    //Cerrar archivo
+    arch.flush();
+    arch.close();
+
+    //serial->clear();
+    serial->close();
+
+    qDebug() << "\nPuerto cerrado\n";
+}
